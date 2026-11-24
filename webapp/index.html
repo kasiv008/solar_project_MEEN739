@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Solar Explorer</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Campus Solar Explorer</h1>
+      <p class="sub">Texas A&amp;M College Station campus · rooftops, parking canopies and open land · MEEN 439/739 Team 4</p>
+    </div>
+    <div class="top-controls">
+      <label>LiDAR <select id="vintage"><option value="2025">2025 StratMap</option><option value="2017">2017 USGS 3DEP</option></select></label>
+      <label>Campus use FY2026 <select id="scenario"><option value="low">low · 611 GWh</option><option value="central" selected>central · 650 GWh</option><option value="high">high · 686 GWh</option></select></label>
+    </div>
+  </header>
+
+  <main>
+    <section class="mapwrap">
+      <div id="map"></div>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <aside class="panel">
+      <div class="card target">
+        <div class="row between">
+          <span class="label">Solar output target</span>
+          <span class="big" id="pctLabel">10 %</span>
+        </div>
+        <input type="range" id="target" min="0" max="50" step="0.5" value="10" aria-label="Target share of campus electricity">
+        <div class="ticks" id="ticks"></div>
+        <p class="hint" id="targetHint"></p>
+      </div>
+
+      <div class="card">
+        <span class="label">Strategy</span>
+        <div class="seg" role="tablist" id="strategy">
+          <button data-v="land" class="on" title="Roofs first, then garages, parking, open land last; densest design per site">Least land</button>
+          <button data-v="cost" title="Cheapest kWh first, any land">Least cost</button>
+          <button data-v="optimal" title="Cheapest kWh with open land priced, never exporting more than the cap">Optimal</button>
+        </div>
+        <p class="hint" id="strategyHint"></p>
+        <div class="row wrap checks" id="include"></div>
+        <details>
+          <summary>Assumptions (costs, land value, grid cap)</summary>
+          <div class="grid2" id="assump"></div>
+        </details>
+      </div>
+
+      <div class="tiles" id="tiles"></div>
+
+      <div class="card">
+        <div class="row between"><span class="label">By land type</span>
+          <select id="barMetric">
+            <option value="kwh">Energy (GWh/yr)</option><option value="kwdc">Capacity (MWdc)</option>
+            <option value="area">Built area (ha)</option><option value="capex">Capex ($M, placeholder)</option>
+            <option value="sites">Sites</option>
+          </select></div>
+        <div class="chartbox short"><canvas id="bars"></canvas></div>
+      </div>
+
+      <div class="card">
+        <span class="label">Capex by component (placeholder cost model)</span>
+        <div class="chartbox short"><canvas id="capexParts"></canvas></div>
+        <p class="hint" id="capexHint"></p>
+      </div>
+
+      <div class="card">
+        <div class="row between"><span class="label">Average day vs campus load (after CHP)</span>
+          <select id="season"><option value="summer">Summer (Jun-Aug)</option><option value="winter">Winter (Dec-Feb)</option><option value="year">Whole year</option></select></div>
+        <div class="chartbox"><canvas id="day"></canvas></div>
+        <p class="hint" id="gridHint"></p>
+      </div>
+
+      <div class="card">
+        <div class="row between"><span class="label">Selected sites</span><button class="ghost" id="csv">Download CSV</button></div>
+        <div class="tablewrap"><table id="table"><thead><tr><th>Site</th><th>Type</th><th>Design</th><th>kWdc</th><th>MWh/yr</th><th>$/W</th><th>¢/kWh</th></tr></thead><tbody></tbody></table></div>
+      </div>
+      <p class="foot">Energy: PySAM PVWatts v8 per site with LiDAR shading, College Station TMY. Costs: base $/W (NREL/LBNL benchmark placeholders) × economies of scale + site adders (height, re-roof, garage structure, interconnection, site prep) - all placeholders, editable above. Campus load: purchased + CHP (EIA-923), FY2026 estimate; CHP held at its 2025 output.</p>
+    </aside>
+  </main>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/chart.umd.js"></script>
+  <script src="model.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

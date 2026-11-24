@@ -36,6 +36,9 @@ unzip solar_data.zip
 
 # 3. run everything (~10 min, both LiDAR years)
 ./run_all.sh            # or: ./run_all.sh 2025   for one vintage
+
+# 4. interactive explorer
+./serve.sh              # then open http://localhost:8000  (Ctrl+C to stop; ./serve.sh 8080 for another port)
 ```
 
 To run a single step without activating the env, use `./run.sh scripts/<step>.py --vintage 2025`.
@@ -89,12 +92,34 @@ To inspect a single roof (imagery, height, roughness, tilt, usable area):
 | Parking carports (stall-row canopies) | 42.5 | 60.3 | 9 % |
 | Open land (upper bound; fixed 25° / tracker) | 83 / 58 | 122 / 100 | 19 / 15 % |
 | Portfolio A, 10 % with no new land | 49 | 65 | 10 % |
-| Portfolio B, 10 % at least cost | 37 | 65 | 10 % (53 ha of open land) |
-| Portfolio D, grid-limited (export ≤ 5 %) | 109 | 170 | 26 % |
+| Portfolio B, 10 % at least cost | 40 | 65 | 10 % (38 ha of open land, incl. Polo Fields) |
+| Portfolio D, grid-limited (export ≤ 5 %) | 106 | 163 | 25 % |
 
-Costs are **placeholders** (NREL/LBNL benchmarks, `config/sam_defaults.json` → `costs`).
+Costs are **placeholders** (cost model v2 below; `config/sam_defaults.json` → `costs`).
 
 ---
+
+## Interactive explorer (`webapp/`)
+A local web page on top of the inventory (`./serve.sh`, then open http://localhost:8000). It has no
+external dependencies: Leaflet and Chart.js are vendored, and the basemap is our own GeoTIFF.
+- **Target slider:** PV output as a % of FY2026 campus use (5 %, the 10 % target, up to the maximum
+  reachable with the current settings).
+- **Three strategies:**
+  - *Least land*: roofs, then garages, parking, open land; densest design per site
+  - *Least cost*: cheapest kWh first
+  - *Optimal*: cheapest kWh with open land priced ($/acre, editable) and export to ERCOT capped
+    (5 %, editable)
+- **Map** on the 30 cm imagery: rooftops, garage tops, parking canopies and open land in different
+  colours. Selected sites are filled; click any site for its design options, kWdc, MWh/yr and ¢/kWh.
+- **Live numbers:** energy, MWdc, new land, capex, LCOE (and with 30 % ITC), payback; bars by land type
+  (energy, MWdc, area, capex, sites); average summer / winter day of PV vs campus load minus CHP,
+  with on-campus use and export; selected-site table with CSV download.
+- **Toggles:** LiDAR year, campus-use scenario, land types, Polo Fields, east-west roofs, fixed / tracker,
+  $/W per land type.
+
+`webapp/model.js` re-implements `11_portfolios.py`, and its results match the Python portfolios. Data:
+`scripts/12_build_webapp.py` writes `webapp/data/`, which is not in git and is rebuilt by `run_all.sh`.
+Settings can go in the URL, e.g. `http://localhost:8000/#strategy=optimal&target=20&vintage=2017`.
 
 ## Pipeline
 
@@ -112,6 +137,7 @@ Costs are **placeholders** (NREL/LBNL benchmarks, `config/sam_defaults.json` →
 | 09 | `09_campus_balance.py --vintage v` | PV vs (campus load − CHP) hour by hour, FY2026 low / central / high | `outputs/<v>/campus_balance.csv` |
 | — | `compare_vintages.py` | 2017 vs 2025 per roof | `outputs/compare_2017_vs_2025.csv` |
 | 10 | `10_design_sweeps.py`, `plot_design_sweeps.py` | Roof tilt, GCR and east-west racks; carport tilt and azimuth; fixed vs tracker GCR; DC/AC at fixed AC; practical envelope flagged | `outputs/design_sweeps/` |
+| 12 | `12_build_webapp.py` | data for the interactive explorer (basemap, sites, design options, hourly profiles) | `webapp/data/` |
 | 11 | `11_portfolios.py --vintage v`, `plot_portfolios.py` | Portfolios: A least land, B least cost (B1 without Polo Fields, B0 no open land), C maximum output (C0 built land), D grid-limited. Targets 5 % and 10 %. Open-land policy screen; LCOE, payback, 30 % tax credit; on-campus use vs export. | `outputs/<v>/portfolios/` |
 
 Shared helpers: `scripts/vintage.py` (vintage folders), `config/lidar_vintages.json`, `config/sam_defaults.json`.
@@ -134,7 +160,21 @@ Steps 03–09 and 11 take `--vintage 2017|2025` and write only to `data/interim/
 | `carport` | surface lots, over the stall rows (aisles open) | steel T-canopies, 7°, 0.18 kW per m² of canopy | carport |
 | `ground_fixed` / `ground_tracker` | open land | driven piles, fencing, site prep | ground |
 
-Each site carries `height_m`, `roof_age_yr`, `dist_substation_m`, `system_capacity_kw` and placeholder capex.
+### Cost model v2 (`scripts/costs.py`, mirrored in `webapp/model.js`)
+`capex = kWdc × 1000 × base $/W × size factor + adders`. **All values are placeholders** (plausible orders of
+magnitude, not from a cited source); edit them in `config/sam_defaults.json` → `costs.model` or live on the web page.
+
+| Component | Applies to | Default | Driven by |
+|---|---|---|---|
+| Base $/Wdc | all | roof 1.90, carport/garage 2.80, ground fixed 1.45, tracker 1.60 (team's NREL/LBNL benchmark placeholders) | mount type |
+| Size factor `(kWdc/ref)^-0.10`, clipped 0.85–1.6 | all | ref: roof and carport 500 kW, garage 1 MW, ground 5 MW | site kWdc |
+| Height / crane | roofs, garages | +$0.005/W per m above 12 m | `height_m` |
+| Re-roof remove-and-reinstall | roofs | +$0.20/W if building ≥ 20 yr | building age (roof-age proxy) |
+| Garage structure | garage tops | +$0.30/W | type |
+| Interconnection | parking, open land | < 250 kW: $50k LV tie; else $150k transformer/switchgear + $400/m MV ductbank | kWdc, `dist_substation_m` |
+| Site prep and fencing | open land | $4/m² of land | land area |
+
+O&M is per kW by mount type. `LCOE = (capex × CRF + O&M) / (kWh × 0.956)`, with CRF 0.0782 (6 %, 25 yr).
 
 ## Feeding PySAM (PVWatts v8)
 One row of `outputs/<v>/roof_sections.csv` (or `parking_sections.csv`) is one PVWatts system:

@@ -1,0 +1,12 @@
+portfolio,sites,MWdc,GWh,pct_campus,new_land_ha,built_area_ha,capex_musd,lcoe_c_kwh,lcoe_c_kwh_itc30,payback_yr_5_6c,payback_yr_10c,peak_MWac,used_on_campus_pct,exported_GWh,capex_base_musd,capex_scale_musd,capex_height_musd,capex_reroof_musd,capex_garage_musd,capex_interconnection_musd,capex_siteprep_musd,mix,designs
+A least land 5%,20,24.44,32.5,5.0,0.0,13.02,46.6,13.14,9.63,33.76,16.58,19.57,100.0,0.0,46.44,-4.23,0.41,3.98,0.0,0.0,0.0,roof 100%,east-west 5 (20)
+B least cost 5%,1,19.3,32.5,5.0,19.31,19.31,28.02,8.11,5.99,18.78,9.59,15.81,100.0,0.0,30.88,-4.26,0.0,0.0,0.0,0.64,0.77,open land 100%,tracker 0.5 (1)
+"B1 least cost, without Polo Fields 5%",4,20.57,32.5,5.0,18.99,18.99,32.04,9.13,6.71,21.51,10.98,16.74,100.0,0.0,31.48,-1.05,0.0,0.0,0.0,0.85,0.76,open land 100%,"tracker 0.5 (3), fixed 20/0.6 (1)"
+"B0 least cost, no open land 5%",34,23.07,32.5,5.0,0.0,15.31,44.47,12.53,9.17,31.66,15.69,18.7,100.0,0.0,43.84,-2.16,0.34,2.46,0.0,0.0,0.0,roof 100%,rows 10 (34)
+A least land 10%,78,49.04,65.0,10.0,0.0,26.1,97.07,13.64,9.97,35.21,17.28,39.13,100.0,0.0,93.18,-3.6,0.69,6.8,0.0,0.0,0.0,roof 100%,east-west 5 (78)
+B least cost 10%,4,39.85,65.0,10.0,38.29,38.29,59.23,8.51,6.28,19.87,10.14,32.55,100.0,0.0,62.34,-6.07,0.0,0.0,0.0,1.44,1.53,open land 100%,"tracker 0.5 (3), fixed 20/0.6 (1)"
+"B1 least cost, without Polo Fields 10%",14,41.27,65.0,10.0,34.18,37.29,69.82,9.88,7.24,23.56,11.99,33.64,100.0,0.0,65.23,-0.2,0.12,0.31,0.0,3.0,1.37,"open land 90%, roof 10%","tracker 0.5 (6), fixed 20/0.6 (4), rows 10 (4)"
+"B0 least cost, no open land 10%",130,46.41,65.0,10.0,0.0,30.72,95.35,13.34,9.74,34.0,16.83,37.41,100.0,0.0,88.18,0.41,0.56,6.19,0.0,0.0,0.0,roof 100%,rows 10 (130)
+C maximum output (all sites),402,206.19,290.0,44.62,73.09,139.7,455.57,14.13,10.27,35.88,17.9,166.6,65.96,98.71,395.27,0.02,0.97,10.2,1.64,44.54,2.92,"open land 44%, roof 32%, parking 21%, garage top 3%","east-west 5 (244), canopy 7 (103), fixed 20/0.6 (46), rows 10 (9)"
+"C0 maximum output, no open land",356,118.48,161.21,24.8,0.0,66.61,308.35,17.09,12.4,45.35,22.19,95.34,93.94,9.77,268.1,-0.67,0.97,10.2,1.64,28.1,0.0,"roof 58%, parking 37%, garage top 5%","east-west 5 (244), canopy 7 (103), rows 10 (9)"
+D grid-limited (export <= 5 %),104,106.32,163.1,25.09,66.79,90.42,190.24,10.69,7.83,25.91,13.1,86.26,95.0,8.15,177.0,-2.14,0.51,4.36,0.0,7.83,2.67,"open land 69%, roof 31%","rows 10 (75), fixed 20/0.6 (17), tracker 0.5 (7), tracker 0.35 (5)"

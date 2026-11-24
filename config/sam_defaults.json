@@ -136,6 +136,49 @@
       },
       "itc_sensitivity": 0.3,
       "_source": "Team4_SAM_Inputs 'Economics': LCOE = (capex x CRF + O&M) / (yield x 0.956); 6 %, 25 yr"
+    },
+    "model": {
+      "_status": "PLACEHOLDERS - plausible orders of magnitude, not from a cited source; replace with the team's cost table",
+      "scale": {
+        "exponent": 0.1,
+        "min_factor": 0.85,
+        "max_factor": 1.6,
+        "ref_kwdc": {
+          "roof": 500,
+          "roof_east_west": 500,
+          "carport": 500,
+          "garage_canopy": 1000,
+          "ground_fixed": 5000,
+          "ground_tracker": 5000
+        },
+        "_note": "base $/W applies at ref_kwdc; ~-20 % per 10x size (exponent 0.10)"
+      },
+      "height": {
+        "usd_per_w_per_m": 0.005,
+        "free_m": 12,
+        "_note": "crane / material lift / access above ~3 storeys"
+      },
+      "reroof": {
+        "usd_per_w": 0.2,
+        "age_yr": 20,
+        "_note": "remove & reinstall the array once during its life when the building (proxy for roof) is >= 20 yr old"
+      },
+      "garage": {
+        "usd_per_w": 0.3,
+        "_note": "structural review / reinforcement of the (post-tensioned) top deck"
+      },
+      "interconnection": {
+        "lv_max_kwdc": 250,
+        "lv_fixed_usd": 50000,
+        "mv_fixed_usd": 150000,
+        "mv_usd_per_m": 400,
+        "default_dist_m": 800,
+        "_note": "small sites tie into a nearby building service; larger ones need a pad-mount transformer + switchgear on the 12.47 kV loop and medium-voltage ductbank (distance to the nearest TAMU substation as proxy)"
+      },
+      "siteprep": {
+        "usd_per_m2": 4.0,
+        "_note": "grading, fencing, access on open land"
+      }
     }
   }
 }

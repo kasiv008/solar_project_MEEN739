@@ -26,3 +26,6 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+# web app data (rebuilt by scripts/12_build_webapp.py)
+/webapp/data/

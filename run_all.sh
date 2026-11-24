@@ -38,4 +38,5 @@ step "10 design sweeps"; $R scripts/10_design_sweeps.py; $R scripts/plot_design_
 for v in $VINTAGES; do
   step "[$v] 11 portfolios"; $R scripts/11_portfolios.py --vintage "$v"; $R scripts/plot_portfolios.py --vintage "$v"
 done
-echo; echo "done - see outputs/"
+step "12 web app data"; $R scripts/12_build_webapp.py
+echo; echo "done - see outputs/, and ./serve.sh -> http://localhost:8000"

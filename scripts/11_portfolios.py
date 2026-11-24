@@ -19,7 +19,8 @@ Portfolios (targets: 5 % and 10 % of FY2026 campus use, central 650 GWh):
                     push export to ERCOT above 5 % of PV output -> the most PV the campus can absorb
 Each portfolio: MWdc, GWh, % campus, new land, capex, LCOE, payback; and hour-by-hour vs the campus
 load minus CHP (09_campus_balance, central, cooling shape): used on campus, exported, peak MWac.
-Costs are the placeholders in config/sam_defaults.json -> costs.
+Costs: cost model v2 (scripts/costs.py): base $/W x economies of scale + site adders (height, re-roof,
+garage structure, interconnection, site prep); all placeholders in config/sam_defaults.json -> costs.
 
 Outputs: outputs/<v>/portfolios/summary.csv, sites_<portfolio>.csv, site_options.csv, open_land_policy.csv
 """
@@ -31,6 +32,7 @@ import numpy as np
 import pandas as pd
 import PySAM.Pvwattsv8 as pv
 
+from costs import COMPONENTS, capex_breakdown
 from vintage import ROOT, get_vintage
 
 V = get_vintage()
@@ -118,13 +120,22 @@ def site_options():
     ratio = sweep_ratio()
     opts = []
 
-    def add(site_id, name, land_type, design, kwdc, kwh, area_m2, new_land_m2, cost_key, shape, lat=None, lon=None):
-        capex = kwdc * 1e3 * COST["installed_usd_per_wdc"][cost_key]
+    # cost drivers per site (cost model v2, scripts/costs.py)
+    drv = {r.roof_id: (r.height_m, r.roof_age_yr, r.dist_substation_m) for r in roofs.itertuples()}
+    drv |= {r.lot_id: (np.nan, np.nan, r.dist_substation_m) for r in lots.itertuples()}
+    drv |= {r.open_id: (np.nan, np.nan, r.dist_substation_m) for r in ol.itertuples()}
+
+    def add(site_id, name, land_type, design, kwdc, kwh, area_m2, new_land_m2, cost_key, shape):
+        h, age, dist = drv.get(site_id, (np.nan, np.nan, np.nan))
+        cb_ = capex_breakdown(cost_key, land_type, kwdc, new_land_m2, h, age, dist, COST)
+        capex = sum(cb_.values())
         om = kwdc * COST["om_usd_per_kwdc_yr"][cost_key]
         lcoe = (capex * FIN["crf"] + om) / (kwh * FIN["levelized_energy_factor"])
         opts.append(dict(site_id=site_id, name=name, land_type=land_type, design=design, kwdc=kwdc, kwh=kwh,
                          area_m2=area_m2, new_land_m2=new_land_m2, capex_usd=capex, om_usd_yr=om,
-                         lcoe_usd_kwh=lcoe, kwh_per_m2=kwh / max(area_m2, 1), shape=shape))
+                         lcoe_usd_kwh=lcoe, usd_per_wdc=capex / (kwdc * 1e3), kwh_per_m2=kwh / max(area_m2, 1),
+                         shape=shape, cost_key=cost_key, height_m=h, age_yr=age, dist_m=dist,
+                         **{f"capex_{k}": v for k, v in cb_.items()}))
 
     # roofs (incl. garages): split by archetype
     r = e[e.kind.isin(["roof", "garage canopy"])].merge(rs, on="section_id", how="left")
@@ -244,6 +255,8 @@ def score(name, p, S, load):
         lcoe_c_kwh=100 * lcoe, lcoe_c_kwh_itc30=100 * (capex * (1 - FIN["itc_sensitivity"]) * FIN["crf"] + om) / (kwh * FIN["levelized_energy_factor"]),
         payback_yr_5_6c=pay["base_purchase_fy23"], payback_yr_10c=pay["ues_rate_fy27"],
         peak_MWac=prof.max(), used_on_campus_pct=100 * used / (kwh / 1e6), exported_GWh=kwh / 1e6 - used,
+        **{f"capex_{k}_musd": p[f"capex_{k}"].mul(p.get("partial_frac", pd.Series(1, index=p.index)).fillna(1)).sum() / 1e6
+           for k in COMPONENTS if f"capex_{k}" in p},
         mix=", ".join(f"{k} {100 * v:.0f}%" for k, v in mix.sort_values(ascending=False).items()),
         designs=", ".join(f"{k} ({v})" for k, v in p.design.value_counts().items()))
 
