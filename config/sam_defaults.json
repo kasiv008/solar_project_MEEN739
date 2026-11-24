@@ -178,7 +178,15 @@
       "siteprep": {
         "usd_per_m2": 4.0,
         "_note": "grading, fencing, access on open land"
+      },
+      "project": {
+        "fixed_usd_per_site": 25000,
+        "_note": "per-site soft costs: design, permitting, interconnection study, commissioning, mobilisation"
       }
     }
+  },
+  "portfolio": {
+    "min_site_kwdc": 0,
+    "_note": "sites smaller than this (kWdc, roofs / garages / parking) are not built; 0 = keep all"
   }
 }

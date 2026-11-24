@@ -184,7 +184,11 @@ def site_options():
             km, em = ratio[dense]
             add(oid, label, "open land", dense, g.kwdc.sum() * km, g.annual_kwh.sum() * em, a, a, ck, dense)
     o = pd.DataFrame(opts)
-    o = o[o.kwh > 0].reset_index(drop=True)
+    o = o[o.kwh > 0]
+    mn = CFG.get("portfolio", {}).get("min_site_kwdc", 0)
+    if mn:  # projects too small to be worth doing (open land tracts are kept; they can be partly built)
+        o = o[(o.land_type == "open land") | (o.kwdc >= mn)]
+    o = o.reset_index(drop=True)
     return o
 
 
@@ -250,7 +254,8 @@ def score(name, p, S, load):
     pay = {k: capex / (kwh * v - om) if kwh * v > om else np.inf for k, v in FIN["electricity_price_usd_per_kwh"].items()}
     mix = p.groupby("land_type").kwh.sum() / kwh
     return dict(
-        portfolio=name, sites=len(p), MWdc=p.kwdc.sum() / 1e3, GWh=kwh / 1e6, pct_campus=100 * kwh / 1e6 / CAMPUS,
+        portfolio=name, sites=len(p), buildings=int(p.land_type.isin(["roof", "garage top"]).sum()),
+        lots=int((p.land_type == "parking").sum()), tracts=int((p.land_type == "open land").sum()), MWdc=p.kwdc.sum() / 1e3, GWh=kwh / 1e6, pct_campus=100 * kwh / 1e6 / CAMPUS,
         new_land_ha=p.new_land_m2.sum() / 1e4, built_area_ha=p.area_m2.sum() / 1e4, capex_musd=capex / 1e6,
         lcoe_c_kwh=100 * lcoe, lcoe_c_kwh_itc30=100 * (capex * (1 - FIN["itc_sensitivity"]) * FIN["crf"] + om) / (kwh * FIN["levelized_energy_factor"]),
         payback_yr_5_6c=pay["base_purchase_fy23"], payback_yr_10c=pay["ues_rate_fy27"],

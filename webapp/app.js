@@ -12,7 +12,7 @@
     cost: "Cheapest kWh first on any land: usually trackers on open land, then 10° roof rows.",
     optimal: "Cheapest kWh once open land carries a price (land value), and never exporting more than the grid cap to ERCOT.",
   };
-  const PART_LABEL = { base: "base", scale: "size (economies of scale)", height: "height / crane", reroof: "re-roof R&R",
+  const PART_LABEL = { base: "base", scale: "size (economies of scale)", project: "per-site project cost", height: "height / crane", reroof: "re-roof R&R",
                        garage: "garage structure", interconnection: "interconnection", siteprep: "site prep & fencing" };
   const COST_LABEL = { roof: "Roof rows $/Wdc", roof_east_west: "Roof east-west $/Wdc", garage_canopy: "Garage canopy $/Wdc",
                        carport: "Parking canopy $/Wdc", ground_fixed: "Ground fixed $/Wdc", ground_tracker: "Tracker $/Wdc" };
@@ -29,7 +29,7 @@
     strategy: hash.strategy || "land", targetPct: +(hash.target || 10),
     include: { "roof": true, "garage top": true, "parking": true, "open land": true },
     polo: true, allowEastWest: true, openDesigns: { fixed: true, tracker: true },
-    usdPerW: { ...C.costs.usd_per_wdc }, costModel: JSON.parse(JSON.stringify(C.costs.model)), landValuePerAcre: C.land_value_usd_per_acre, maxExport: C.max_export_frac,
+    usdPerW: { ...C.costs.usd_per_wdc }, costModel: JSON.parse(JSON.stringify(C.costs.model)), landValuePerAcre: C.land_value_usd_per_acre, minKwdc: +(hash.minkw || C.min_site_kwdc || 0), maxExport: C.max_export_frac,
   };
   const SITES = {};
   async function sites() {
@@ -105,6 +105,7 @@
   const CM = S.costModel;
   const P = [  // [label, getter path, step]
     ["Size exponent (−20 %/10× ≈ 0.10)", ["scale", "exponent"], 0.01],
+    ["Per-site project cost $ (design, permits, studies)", ["project", "fixed_usd_per_site"], 5000],
     ["Height adder $/W per m above 12 m", ["height", "usd_per_w_per_m"], 0.001],
     ["Re-roof R&R $/W (bldg ≥ 20 yr)", ["reroof", "usd_per_w"], 0.05],
     ["Garage structural $/W", ["garage", "usd_per_w"], 0.05],
@@ -118,6 +119,7 @@
   A.push(`<span style="grid-column:1/-1;margin-top:4px;font-weight:600">Strategy settings</span>`);
   A.push(`<span>Open-land value ($/acre, Optimal)</span><input type="number" step="25000" min="0" id="landValue" value="${S.landValuePerAcre}">`);
   A.push(`<span>Grid cap: max export (%, Optimal)</span><input type="number" step="1" min="0" max="100" id="maxExport" value="${100 * S.maxExport}">`);
+  A.push(`<span>Minimum site size, kWdc (roofs, garages, lots)</span><input type="number" step="25" min="0" id="minKw" value="${S.minKwdc}">`);
   A.push(`<span>Allow east-west roof racks</span><input type="checkbox" id="ew" checked>`);
   A.push(`<span>Open land: fixed tilt / tracker</span><span><input type="checkbox" id="fx" checked> <input type="checkbox" id="tr" checked></span>`);
   $("assump").innerHTML = A.join("");
@@ -126,6 +128,7 @@
     const [a, b] = P[+inp.dataset.cm][1]; CM[a][b] = +inp.value; update(true); });
   $("landValue").onchange = e => { S.landValuePerAcre = +e.target.value; update(true); };
   $("maxExport").onchange = e => { S.maxExport = +e.target.value / 100; update(true); };
+  $("minKw").onchange = e => { S.minKwdc = +e.target.value; update(true); };
   $("ew").onchange = e => { S.allowEastWest = e.target.checked; update(true); };
   $("fx").onchange = e => { S.openDesigns.fixed = e.target.checked; update(true); };
   $("tr").onchange = e => { S.openDesigns.tracker = e.target.checked; update(true); };
@@ -199,7 +202,7 @@
     renderCharts();
     renderTable(sel);
     document.body.dataset.result = JSON.stringify({ strategy: S.strategy, target: S.targetPct, vintage: S.vintage,
-      sites: sum.T.sites, MWdc: +(sum.T.kwdc / 1e3).toFixed(1), GWh: +sum.gwh.toFixed(1), newLandHa: +(sum.T.newLand / 1e4).toFixed(1),
+      sites: sum.T.sites, buildings: (sum.by["roof"]?.sites || 0) + (sum.by["garage top"]?.sites || 0), MWdc: +(sum.T.kwdc / 1e3).toFixed(1), GWh: +sum.gwh.toFixed(1), newLandHa: +(sum.T.newLand / 1e4).toFixed(1),
       capexM: +(sum.T.capex / 1e6).toFixed(1), lcoe: +(100 * sum.lcoe).toFixed(2), exportGWh: +sum.exportGwh.toFixed(1),
       peakMW: +sum.peak.toFixed(1), maxPct: +$("target").max });
   }
@@ -220,7 +223,9 @@
     const t = (k, v, s) => `<div class="tile"><div class="v">${v}</div><div class="k">${k}</div>${s ? `<div class="s">${s}</div>` : ""}</div>`;
     $("tiles").innerHTML = [
       t("Energy, GWh/yr", fmt(m.gwh, 1), `${fmt(m.pct, 1)} % of campus use`),
-      t("Capacity, MWdc", fmt(m.T.kwdc / 1e3, 1), `${m.T.sites} sites · peak ${fmt(m.peak, 0)} MWac`),
+      t("Capacity, MWdc", fmt(m.T.kwdc / 1e3, 1), `peak ${fmt(m.peak, 0)} MWac`),
+      t("Sites", String(m.T.sites), [["roof", "buildings"], ["garage top", "garages"], ["parking", "lots"], ["open land", "tracts"]]
+        .filter(([k]) => m.by[k]).map(([k, n]) => `${m.by[k].sites} ${n}`).join(" · ")),
       t("New land, ha", fmt(m.T.newLand / 1e4, 1), `built area ${fmt(m.T.area / 1e4, 1)} ha`),
       t("Capex, $M", fmt(m.T.capex / 1e6, 0), "placeholder $/W"),
       t("LCOE, ¢/kWh", fmt(100 * m.lcoe, 1), `${fmt(100 * m.lcoeItc, 1)} with 30 % ITC`),

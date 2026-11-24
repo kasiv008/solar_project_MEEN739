@@ -173,6 +173,13 @@ magnitude, not from a cited source); edit them in `config/sam_defaults.json` →
 | Garage structure | garage tops | +$0.30/W | type |
 | Interconnection | parking, open land | < 250 kW: $50k LV tie; else $150k transformer/switchgear + $400/m MV ductbank | kWdc, `dist_substation_m` |
 | Site prep and fencing | open land | $4/m² of land | land area |
+| Per-site project cost | every site | $25k (design, permits, interconnection study, commissioning) | number of sites: favours fewer, larger sites |
+
+**Number of sites.** *Least land* takes sites largest-energy first within each land type, which gives the
+minimum number of buildings for a target (71 roofs for 10 %, vs 107 cheapest-first and 149 by kWh/m²).
+*Least cost* and *Optimal* favour fewer sites through the per-site project cost and the size factor.
+`config/sam_defaults.json` → `portfolio.min_site_kwdc` (and the page's Assumptions panel) drops roofs,
+garages and lots below a minimum project size; the default 0 keeps all.
 
 O&M is per kW by mount type. `LCOE = (capex × CRF + O&M) / (kWh × 0.956)`, with CRF 0.0782 (6 %, 25 yr).
 

@@ -117,7 +117,8 @@ def common(pf, cb):
         shape_scale=1e6,
         costs=dict(usd_per_wdc=CFG["costs"]["installed_usd_per_wdc"], om=CFG["costs"]["om_usd_per_kwdc_yr"],
                    finance=CFG["costs"]["finance"], model=CFG["costs"]["model"]),
-        land_value_usd_per_acre=250000, max_export_frac=0.05)
+        land_value_usd_per_acre=250000, max_export_frac=0.05,
+        min_site_kwdc=CFG.get("portfolio", {}).get("min_site_kwdc", 0))
     (WEB / "common.json").write_text(json.dumps(data, separators=(",", ":")))
 
 

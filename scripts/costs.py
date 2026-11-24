@@ -10,10 +10,12 @@ mirrors it - keep the two in sync).
     interconnection (parking, open land): kWdc < lv_max_kwdc -> lv_fixed_usd
                                           else mv_fixed_usd + mv_usd_per_m * distance to substation
     site prep (open land)    : usd_per_m2 * land m2                                       grading, fencing
+    project (every site)     : fixed_usd_per_site     design, permitting, studies, commissioning, mobilisation
+                               -> many small sites cost more than a few large ones
 """
 import numpy as np
 
-COMPONENTS = ["base", "scale", "height", "reroof", "garage", "interconnection", "siteprep"]
+COMPONENTS = ["base", "scale", "project", "height", "reroof", "garage", "interconnection", "siteprep"]
 
 
 def capex_breakdown(cost_key, land_type, kwdc, land_m2, height_m, age_yr, dist_m, costs):
@@ -23,7 +25,7 @@ def capex_breakdown(cost_key, land_type, kwdc, land_m2, height_m, age_yr, dist_m
     base = w * costs["installed_usd_per_wdc"][cost_key]
     f = (max(kwdc, 1.0) / M["scale"]["ref_kwdc"][cost_key]) ** (-M["scale"]["exponent"])
     f = float(np.clip(f, M["scale"]["min_factor"], M["scale"]["max_factor"]))
-    out = dict(base=base, scale=base * (f - 1), height=0.0, reroof=0.0, garage=0.0, interconnection=0.0, siteprep=0.0)
+    out = dict(base=base, scale=base * (f - 1), project=M["project"]["fixed_usd_per_site"], height=0.0, reroof=0.0, garage=0.0, interconnection=0.0, siteprep=0.0)
     if land_type in ("roof", "garage top") and height_m is not None and np.isfinite(height_m):
         out["height"] = w * M["height"]["usd_per_w_per_m"] * max(height_m - M["height"]["free_m"], 0.0)
     if land_type == "roof" and age_yr is not None and np.isfinite(age_yr) and age_yr >= M["reroof"]["age_yr"]:
@@ -54,4 +56,6 @@ DEFAULT_MODEL = {
                         "_note": "small sites tie into a nearby building service; larger ones need a pad-mount transformer + "
                                  "switchgear on the 12.47 kV loop and medium-voltage ductbank (distance to the nearest TAMU substation as proxy)"},
     "siteprep": {"usd_per_m2": 4.0, "_note": "grading, fencing, access on open land"},
+    "project": {"fixed_usd_per_site": 25000,
+                "_note": "per-site soft costs: design, permitting, interconnection study, commissioning, mobilisation"},
 }

@@ -12,7 +12,7 @@
     const base = w * s.usdPerW[opt.cost_key];
     let f = Math.pow(Math.max(opt.kwdc, 1) / M.scale.ref_kwdc[opt.cost_key], -M.scale.exponent);
     f = Math.min(Math.max(f, M.scale.min_factor), M.scale.max_factor);
-    const out = { base, scale: base * (f - 1), height: 0, reroof: 0, garage: 0, interconnection: 0, siteprep: 0 };
+    const out = { base, scale: base * (f - 1), project: M.project.fixed_usd_per_site, height: 0, reroof: 0, garage: 0, interconnection: 0, siteprep: 0 };
     const L = site.land, ok = v => v !== null && v !== undefined && isFinite(v);
     if ((L === "roof" || L === "garage top") && ok(d.height_m))
       out.height = w * M.height.usd_per_w_per_m * Math.max(d.height_m - M.height.free_m, 0);
@@ -45,6 +45,7 @@
       if (site.polo && !s.polo) continue;
       let best = null;
       for (const o of site.options) {
+        if (site.land !== "open land" && o.kwdc < s.minKwdc) continue;   // too small to be a project
         if (o.design.startsWith("east-west") && !s.allowEastWest) continue;
         if (site.land === "open land" && !s.openDesigns[o.design.startsWith("tracker") ? "tracker" : "fixed"]) continue;
         const m = metrics(o, s, C, site);
@@ -97,7 +98,7 @@
     const f = C.costs.finance;
     const by = {};
     const T = { kwdc: 0, kwh: 0, area: 0, newLand: 0, capex: 0, om: 0, sites: 0 };
-    const parts = { base: 0, scale: 0, height: 0, reroof: 0, garage: 0, interconnection: 0, siteprep: 0 };
+    const parts = { base: 0, scale: 0, project: 0, height: 0, reroof: 0, garage: 0, interconnection: 0, siteprep: 0 };
     for (const c of sel.chosen) {
       const k = c.frac, L = c.site.land;
       by[L] = by[L] || { kwdc: 0, kwh: 0, area: 0, newLand: 0, capex: 0, sites: 0 };
