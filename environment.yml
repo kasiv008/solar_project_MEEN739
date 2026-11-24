@@ -1,0 +1,31 @@
+# conda env create -f environment.yml   (then: conda activate solar)
+name: solar
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - geopandas>=1.1
+  - pyogrio
+  - rasterio>=1.4
+  - shapely>=2.1
+  - pyproj
+  - laspy>=2.7
+  - lazrs-python
+  - pdal
+  - python-pdal
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - rasterstats
+  - scikit-image
+  - scikit-learn
+  - requests
+  - openpyxl
+  - pyarrow
+  - pip
+  - pip:
+      - nrel-pysam>=7.1
+      - pvlib>=0.16
+variables:
+  PYTHONNOUSERSITE: "1"   # ignore packages in ~/.local so the env stays isolated

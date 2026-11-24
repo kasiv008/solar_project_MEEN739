@@ -1,0 +1,467 @@
+bldg_id,name,tamu_type,year_built,area_m2,is_candidate,screen_reason,v2_area_m2,v2_class,v2_usable_m2,v2_candidate,change
+1560,Student Recreation Center,SPORTS,1995,28975.8,True,candidate,27335.27,candidate flat roof,16117.45,True,in both
+0468,Sterling C. Evans Library,LIBRARY,1999,27417.8,True,candidate,13499.19,candidate flat roof,8313.52,True,in both
+0454,Memorial Student Center,ACADEMIC,1951,18360.6,True,candidate,18606.53,candidate flat roof,8843.7,True,in both
+1559,West Campus Parking Garage,GARAGE,2003,15751.5,True,candidate,15731.14,candidate flat roof,10084.7,True,in both
+0378,Southside Parking Garage,GARAGE,1990,14933.8,True,candidate,15145.21,candidate flat roof,9580.12,True,in both
+0518,Zachry Engineering Education Complex,ACADEMIC,1972,13741.9,True,candidate,10886.73,candidate flat roof,4377.75,True,in both
+1194,Veterinary Large Animal Hospital,ACADEMIC,1993,13208.2,True,candidate,12807.96,candidate flat roof,4521.83,True,in both
+1554,Reed Arena,SPORTS,1998,11515.9,True,candidate,14906.27,candidate flat roof,8447.02,True,in both
+0271,Polo Road Garage,GARAGE,2020,10433.4,True,candidate,11107.34,built after the 2019 LiDAR (flat-roof estimate),4998.3,True,in both
+0388,Northside Parking Garage,GARAGE,1989,10101.9,True,candidate,9899.3,candidate flat roof,6257.56,True,in both
+0379,University Center Parking Garage,GARAGE,1992,9689.9,True,candidate,9814.01,candidate flat roof,6014.73,True,in both
+1544,Gene Stallings Blvd Garage,GARAGE,2016,9416.0,True,candidate,11300.03,candidate flat roof,6563.26,True,in both
+1530,Interdisciplinary Life Sciences Building,ACADEMIC,2009,9024.4,True,candidate,7690.51,candidate flat roof,3070.0,True,in both
+1510,Wehner Building,ACADEMIC,1995,8773.3,True,candidate,6581.12,candidate flat roof,3730.15,True,in both
+1156,Facilities Services,UNIVERSITY,1987,8480.4,True,candidate,8881.18,candidate flat roof,5843.93,True,in both
+0508,Veterinary Teaching Hospital,ACADEMIC,1953,8138.6,True,candidate,7805.77,candidate flat roof,4585.04,True,in both
+0446,Rudder Tower,ACADEMIC,1973,7876.7,True,candidate,7641.22,candidate flat roof,4009.3,True,in both
+0957,Purchasing & Stores,UNIVERSITY,1976,7792.4,True,candidate,7917.53,candidate flat roof,4988.71,True,in both
+1800,General Services Complex,ACADEMIC,2006,7777.3,True,candidate,7605.24,candidate flat roof,4873.23,True,in both
+1904,Texas A&M Institute for Preclinical Studies A,RESEARCH,2009,6889.9,True,candidate,6702.05,candidate flat roof,3267.44,True,in both
+0450,Duncan Dining Hall,DINING,1940,6885.7,True,candidate,7914.41,candidate flat roof,4317.43,True,in both
+1601,Scientific Ocean Drilling Building,ACADEMIC,1986,6389.8,True,candidate,6338.72,candidate flat roof,4057.01,True,in both
+0361,Bright-Slocum Center Texas A&M Football,SPORTS,2003,6379.3,True,candidate,2765.54,candidate flat roof,1249.9,True,in both
+1416,Hullabaloo Residence Hall,HOUSING TAMU,2013,6272.1,True,candidate,6493.21,candidate flat roof,3192.13,True,in both
+0288,Southside Recreation Center,SPORTS,2022,6192.8,True,candidate,5018.28,built after the 2019 LiDAR (flat-roof estimate),2258.23,True,in both
+0440,Commons,DINING,1972,5876.4,True,candidate,5788.04,candidate flat roof,2219.96,True,in both
+0270,Emerging Technologies Building,ACADEMIC,2011,5747.5,True,candidate,4875.41,candidate flat roof,2320.97,True,in both
+0971,Fred Dollar Food Services Commissary,UNIVERSITY,1984,5551.4,True,candidate,4734.04,candidate flat roof,2506.3,True,in both
+1808,Global Health Research Complex,RESEARCH,2019,5275.5,True,candidate,4816.21,built after the 2019 LiDAR (flat-roof estimate),2167.29,True,in both
+0524,Blocker Building,ACADEMIC,1981,5167.5,True,candidate,5154.36,candidate flat roof,2817.6,True,in both
+0383,Koldus Building,ACADEMIC,1992,5137.0,True,candidate,5015.75,candidate flat roof,3006.75,True,in both
+0498,Central Utility Plant,UNIVERSITY,1915,5068.2,True,candidate,4786.1,candidate flat roof,1539.67,True,in both
+1085,Veterinary Small Animal Hospital,ACADEMIC,1981,5003.6,True,candidate,4978.01,candidate flat roof,2946.32,True,in both
+0972,Laboratory Animal Care Building,RESEARCH,1978,4899.7,True,candidate,5322.38,candidate flat roof,2633.18,True,in both
+1398,John D. White '70 - Robert L. Walker '58 Music Activities Center,ACADEMIC,2019,4751.4,True,candidate,4698.83,built after the 2019 LiDAR (flat-roof estimate),2114.47,True,in both
+1543,Innovative Learning Classroom Building,ACADEMIC,2020,4703.9,True,candidate,4394.08,built after the 2019 LiDAR (flat-roof estimate),1977.34,True,in both
+0682,Wisenbaker Engineering Building,ACADEMIC,1983,4450.1,True,candidate,4240.96,candidate flat roof,2497.48,True,in both
+0484,Chemistry,ACADEMIC,1929,4412.9,True,candidate,4008.4300000000003,candidate flat roof,878.83,True,in both
+1509,West Campus Teaching and Research Collaborative,LIBRARY,1985,4403.2,True,candidate,4523.14,candidate flat roof,2992.24,True,in both
+1513,Norman E. Borlaug Building,ACADEMIC,1993,4322.8,True,candidate,4146.78,candidate flat roof,1348.95,True,in both
+0272,Polo Road Building,SPORTS,2020,4279.8,True,candidate,3869.38,built after the 2019 LiDAR (flat-roof estimate),1741.22,True,in both
+0483,Thompson Hall,ACADEMIC,1921,4232.0,True,candidate,4245.92,candidate flat roof,1897.91,True,in both
+1506,Horticulture/Forest Science Building,ACADEMIC,1984,4166.6,True,candidate,4238.82,candidate flat roof,1617.7,True,in both
+1501,Kleberg Center,ACADEMIC,1978,4145.7,True,candidate,4032.65,candidate flat roof,1883.64,True,in both
+1809,TVMDL Building,RESEARCH,2016,4076.1,True,candidate,4015.22,candidate flat roof,1769.04,True,in both
+1041,Former TVMDL Building,UNIVERSITY,1969,4030.3,True,candidate,4293.73,candidate flat roof,2054.42,True,in both
+1504,Reynolds Medical Sciences Building,ACADEMIC,1983,3974.9,True,candidate,3753.85,candidate flat roof,1566.02,True,in both
+1593,White Creek Community Center,ACADEMIC,2018,3974.3,True,candidate,4421.14,built after the 2019 LiDAR (flat-roof estimate),1989.51,True,in both
+1507,Biochemistry/Biophysics Building,ACADEMIC,1989,3912.5,True,candidate,3916.75,candidate flat roof,1662.32,True,in both
+0386,Jack E. Brown Chemical Engineering Building,ACADEMIC,2004,3859.6,True,candidate,3773.17,candidate flat roof,1490.63,True,in both
+1603,Donald L. Houston Building,ACADEMIC,2002,3695.1,True,candidate,3851.46,candidate flat roof,2130.53,True,in both
+1591,White Creek Apartments B,HOUSING TAMU,2015,3639.2,True,candidate,4339.77,candidate flat roof,2084.62,True,in both
+1900,Texas A&M Institute For Genomic Medicine,RESEARCH,2009,3592.6,True,candidate,3393.83,candidate flat roof,1911.33,True,in both
+1592,White Creek Apartments C,HOUSING TAMU,2015,3585.1,True,candidate,4847.05,candidate flat roof,2186.14,True,in both
+1500,Instructional Laboratory & Innovative Learning Building,ACADEMIC,2022,3479.7,True,candidate,2457.27,built after the 2019 LiDAR (flat-roof estimate),1105.77,True,in both
+0398,Langford Architecture Center Building A,ACADEMIC,1977,3452.0,True,candidate,3527.23,candidate flat roof,1455.85,True,in both
+0434,Luedecke Building (Cyclotron),ACADEMIC,1966,3347.0,True,candidate,3138.44,candidate flat roof,1880.96,True,in both
+1535,Agriculture and Life Sciences Building,ACADEMIC,2011,3333.1,True,candidate,3393.1,candidate flat roof,1912.37,True,in both
+1604,Offshore Technology Research Center,ACADEMIC,1990,3326.6,True,candidate,4025.04,candidate flat roof,2223.57,True,in both
+1590,White Creek Apartments A,HOUSING TAMU,2015,3298.9,True,candidate,4363.22,candidate flat roof,2151.58,True,in both
+1502,HEEP Center,ACADEMIC,1977,3164.3,True,candidate,3135.54,candidate flat roof,1369.49,True,in both
+1598,Testing and Characterization Facility,UNIVERSITY,2002,3153.3,True,candidate,3179.2,candidate flat roof,1610.86,True,in both
+1498,Satellite Utility Plant No. 1,UNIVERSITY,1976,3144.6,True,candidate,3915.93,candidate flat roof,1370.63,True,in both
+0433,Mosher Residence Hall,HOUSING TAMU,1976,3110.9,True,candidate,2744.89,candidate flat roof,1764.15,True,in both
+0499,Engineering Innovation Center,ACADEMIC,1955,3025.9,True,candidate,3014.67,candidate flat roof,1870.79,True,in both
+1605,Centeq Building,ACADEMIC,1991,2973.1,True,candidate,2415.17,candidate flat roof,1231.89,True,in both
+1157,Warehouse,UNIVERSITY,1987,2955.6,True,candidate,3039.33,candidate flat roof,2169.95,True,in both
+1505,Rosenthal Meat Science & Technology Center,ACADEMIC,1983,2867.9,True,candidate,2803.1,candidate flat roof,1158.71,True,in both
+0297,Mitchell Physics Building,ACADEMIC,2009,2843.0,True,candidate,2762.09,candidate flat roof,839.68,True,in both
+0447,Aston Residence Hall,HOUSING TAMU,1976,2797.2,True,candidate,2652.82,candidate flat roof,1638.77,True,in both
+0469,Central Campus Parking Garage,GARAGE,1999,2776.3,True,candidate,2817.58,candidate flat roof,1441.8,True,in both
+0521,Heldenfels Hall,ACADEMIC,1977,2775.2,True,candidate,2581.58,candidate flat roof,1267.06,True,in both
+1810,Office of the State Chemist Building,RESEARCH,2006,2769.2,True,candidate,2885.76,candidate flat roof,1543.16,True,in both
+0490,Halbouty Geosciences Building,ACADEMIC,1933,2753.0,True,candidate,2902.93,candidate flat roof,1399.09,True,in both
+1508,Price Hobgood Ag Engineering Research Lab,ACADEMIC,1985,2731.8,True,candidate,2828.79,candidate flat roof,1404.89,True,in both
+0442,Dunn Residence Hall,HOUSING TAMU,1972,2728.5,True,candidate,2729.77,candidate flat roof,1642.21,True,in both
+0391,James J. Cain '51 Building,ACADEMIC,1986,2722.5,True,candidate,2555.06,candidate flat roof,1360.0,True,in both
+0275,Liberal Arts and Arts & Humanities Building,ACADEMIC,2012,2590.1,True,candidate,2347.72,candidate flat roof,1126.58,True,in both
+1620,Electron Beam Food Research Facility,ACADEMIC,1999,2565.9,True,candidate,2714.52,candidate flat roof,1182.54,True,in both
+1511,West Campus Library,LIBRARY,1994,2530.5,True,candidate,2647.83,candidate flat roof,1118.18,True,in both
+1546,Student Services Building,ACADEMIC,2019,2528.9,True,candidate,2450.07,built after the 2019 LiDAR (flat-roof estimate),1102.53,True,in both
+1026,Veterinary Medicine Administration,ACADEMIC,1968,2456.8,True,candidate,2499.39,candidate flat roof,1513.62,True,in both
+0358,Davis Football Player Development Center,SPORTS,2012,2375.5,True,candidate,1746.0,candidate flat roof,897.04,True,in both
+1515,Plant Pathology and Microbiology Building,ACADEMIC,2019,2362.2,True,candidate,1769.56,built after the 2019 LiDAR (flat-roof estimate),796.3,True,in both
+0393,John H. Lindsey Building,ACADEMIC,1983,2350.9,True,candidate,2525.3,candidate flat roof,1517.43,True,in both
+1197,Veterinary Research Building,RESEARCH,1993,2333.3,True,candidate,2508.55,candidate flat roof,818.53,True,in both
+1582,Player Development Center-West Campus,SPORTS,2014,2304.3,True,candidate,3158.18,candidate flat roof,1779.1,True,in both
+0384,Sam Houston Sanders Corps of Cadets Center,ACADEMIC,1992,2290.7,True,candidate,2324.1,candidate flat roof,1390.71,True,in both
+0438,Harrington Education Center Classroom Building,ACADEMIC,1974,2167.5,True,candidate,2060.43,candidate flat roof,1312.89,True,in both
+0980,Murray Case Sells Storage Bldg,UNIVERSITY,1980,2151.6,True,candidate,2607.43,candidate flat roof,1763.68,True,in both
+1610,Health Technologies Building,ACADEMIC,2003,2138.0,True,candidate,2174.55,candidate flat roof,1468.65,True,in both
+1518,School of Public Health - Admin Bldg,ACADEMIC,2006,2112.5,True,candidate,2030.19,candidate flat roof,1121.55,True,in both
+0478,Scoates Hall,ACADEMIC,1932,2110.1,True,candidate,2118.28,candidate flat roof,1149.44,True,in both
+0496,Utilities & Energy Services Central Office,UNIVERSITY,1940,2056.6,True,candidate,1827.31,candidate flat roof,1126.83,True,in both
+0462,Academic Building,ACADEMIC,1914,2039.4,True,candidate,1952.05,candidate flat roof,751.88,True,in both
+0958,Fleet Services,UNIVERSITY,1976,1994.9,True,candidate,1759.75,candidate flat roof,995.48,True,in both
+0293,Appelt Residence Hall,HOUSING TAMU,1989,1932.3,True,candidate,1911.13,candidate flat roof,1271.42,True,in both
+1522,West Campus Dining Facility,DINING,2022,1919.4,True,candidate,1968.98,built after the 2019 LiDAR (flat-roof estimate),886.04,True,in both
+1602,1111 Research Parkway Bldg,UNIVERSITY,1997,1912.8,True,candidate,1932.48,candidate flat roof,1195.04,True,in both
+0467,Biological Sciences Bldg East,ACADEMIC,1950,1911.7,True,candidate,2171.51,candidate flat roof,915.63,True,in both
+0516,Computing Services Center,ACADEMIC,1959,1909.5,True,candidate,1734.0900000000001,candidate flat roof,856.59,True,in both
+0325,CVE Lab Building,ACADEMIC,1987,1891.9,True,candidate,1907.86,candidate flat roof,869.03,True,in both
+0520,Beutel Health Center,ACADEMIC,1974,1858.2,True,candidate,1676.14,candidate flat roof,900.61,True,in both
+0492,H.J. (Bill) and Reta Haynes Engineering Building,ACADEMIC,1932,1831.7,True,candidate,1717.44,candidate flat roof,866.21,True,in both
+0444,Peterson Building,ACADEMIC,1963,1824.5,True,candidate,1722.36,candidate flat roof,894.71,True,in both
+0449,Biological Sciences Bldg West,ACADEMIC,1967,1792.3,True,candidate,1832.22,candidate flat roof,924.62,True,in both
+0394,Underwood Residence Hall,HOUSING TAMU,1981,1789.9,True,candidate,1764.7,candidate flat roof,675.28,True,in both
+1525,Nuclear Magnetic Resonance Facility,ACADEMIC,2010,1773.4,True,candidate,1764.21,candidate flat roof,679.95,True,in both
+0463,Psychology Building,ACADEMIC,1920,1725.4,True,candidate,1743.88,candidate flat roof,819.97,True,in both
+3198,Gardens Community Center,HOUSING TAMU,2001,1705.7,True,candidate,1847.27,candidate flat roof,755.43,True,in both
+0353,Bright Building,ACADEMIC,1989,1703.2,True,candidate,1640.11,candidate flat roof,714.48,True,in both
+0292,Eppright Residence Hall,HOUSING TAMU,1989,1602.2,True,candidate,1534.51,candidate flat roof,606.2,True,in both
+1537,"Wildlife, Fisheries & Ecological Sciences Building",ACADEMIC,2017,1597.5,True,candidate,1626.9,candidate flat roof,663.77,True,in both
+1536,AgriLife Services Building,ACADEMIC,2011,1594.9,True,candidate,1608.2,candidate flat roof,873.11,True,in both
+0291,Rudder Residence Hall,HOUSING TAMU,1989,1583.6,True,candidate,1525.33,candidate flat roof,707.69,True,in both
+0652,Neeley Residence Hall,HOUSING TAMU,1980,1576.9,True,candidate,1800.08,candidate flat roof,625.58,True,in both
+0290,Wells Residence Hall,HOUSING TAMU,1989,1576.0,True,candidate,1568.8,candidate flat roof,1058.87,True,in both
+0477,Anthropology Building,ACADEMIC,1952,1575.8,True,candidate,1592.4,candidate flat roof,812.46,True,in both
+0549,Haas Residence Hall,HOUSING TAMU,1979,1554.0,True,candidate,1727.59,candidate flat roof,967.27,True,in both
+0436,Reed-McDonald Building,ACADEMIC,1967,1550.9,True,candidate,1523.61,candidate flat roof,781.06,True,in both
+0969,Transit Services,UNIVERSITY,1983,1538.4,True,candidate,920.91,candidate flat roof,564.69,True,in both
+0443,Eller Oceanography & Meteorology Building,ACADEMIC,1973,1507.2,True,candidate,1579.5,candidate flat roof,523.42,True,in both
+1520,School of Public Health - Classroom Bldg,ACADEMIC,2006,1471.2,True,candidate,1516.37,candidate flat roof,749.19,True,in both
+1034,Ag Engineering Power & Machinery Building,ACADEMIC,1963,1436.3,True,candidate,1906.92,candidate flat roof,994.23,True,in both
+0548,Clements Residence Hall,HOUSING TAMU,1981,1420.4,True,candidate,1536.57,candidate flat roof,833.98,True,in both
+0550,McFadden Residence Hall,HOUSING TAMU,1979,1419.7,True,candidate,1597.63,candidate flat roof,858.13,True,in both
+1811,Vet Med Research Bldg Addition,RESEARCH,2010,1419.0,True,candidate,1294.79,candidate flat roof,404.25,True,in both
+0653,Hobby Residence Hall,HOUSING TAMU,1980,1407.1,True,candidate,1605.76,candidate flat roof,817.38,True,in both
+0294,Lechner Residence Hall,HOUSING TAMU,1989,1393.9,True,candidate,1369.64,candidate flat roof,837.8,True,in both
+0432,Architecture Building C,ACADEMIC,1963,1385.1,True,candidate,1275.22,candidate flat roof,724.06,True,in both
+1503,Cater-Mattil Hall,ACADEMIC,1980,1362.1,True,candidate,1472.45,candidate flat roof,672.2,True,in both
+1542,Human Clinical Research Building,ACADEMIC,2017,1350.1,True,candidate,1348.79,candidate flat roof,545.16,True,in both
+1454,The Gardens F,HOUSING TAMU,2010,1334.6,True,candidate,1499.79,candidate flat roof,506.85,True,in both
+1456,The Gardens H,HOUSING TAMU,2010,1334.6,True,candidate,1554.32,candidate flat roof,526.61,True,in both
+1455,The Gardens G,HOUSING TAMU,2010,1334.4,True,candidate,1567.79,candidate flat roof,546.27,True,in both
+1452,The Gardens K,HOUSING TAMU,2010,1332.6,True,candidate,1476.31,candidate flat roof,505.61,True,in both
+1453,The Gardens L,HOUSING TAMU,2010,1332.2,True,candidate,1451.2,candidate flat roof,527.32,True,in both
+1451,The Gardens J,HOUSING TAMU,2010,1321.2,True,candidate,1499.73,candidate flat roof,526.75,True,in both
+0422,Walton Residence Hall,HOUSING TAMU,1931,1320.5,True,candidate,1314.96,candidate flat roof,590.08,True,in both
+0427,Fowler Residence Hall,HOUSING TAMU,1966,1314.0,True,candidate,1260.61,candidate flat roof,841.82,True,in both
+0428,Keathley Residence Hall,HOUSING TAMU,1966,1310.6,True,candidate,1198.47,candidate flat roof,826.08,True,in both
+0511,HEEP Laboratory Building,ACADEMIC,1957,1307.5,True,candidate,1329.74,candidate flat roof,745.92,True,in both
+1146,Biological Control Facility,ACADEMIC,1984,1260.8,True,candidate,1431.54,candidate flat roof,662.5,True,in both
+4633,Veterinary Support Building,RESEARCH,2000,1233.2,True,candidate,1272.34,candidate flat roof,776.18,True,in both
+0476,Francis Hall,ACADEMIC,1922,1223.0,True,candidate,1238.3,candidate flat roof,609.92,True,in both
+1020,Vivarium III,UNIVERSITY,1968,1221.5,True,candidate,1214.53,candidate flat roof,757.34,True,in both
+0513,Doherty Building,ACADEMIC,1960,1209.6,True,candidate,1151.34,candidate flat roof,579.65,True,in both
+4634,Variety Testing and Sorghum Breeding,ACADEMIC,1953,1201.8,True,candidate,1265.77,candidate flat roof,623.89,True,in both
+0417,Hart Residence Hall,HOUSING TAMU,1930,1189.6,True,candidate,1204.72,candidate flat roof,563.12,True,in both
+0385,Dwight Look Engineering Building,ACADEMIC,1987,1175.5,True,candidate,1190.62,candidate flat roof,563.35,True,in both
+1538,The Shirley and Joe Swinbank '74 AgriLife Center,ACADEMIC,2011,1126.4,True,candidate,1185.57,candidate flat roof,733.63,True,in both
+0474,YMCA Building,ACADEMIC,1913,1116.6,True,candidate,1031.27,candidate flat roof,511.63,True,in both
+0445,Teague Research Center,ACADEMIC,1966,1101.3,True,candidate,2228.33,candidate flat roof,952.54,True,in both
+1804,Rollins Urban and Structural Entomology Facility,ACADEMIC,2014,1100.8,True,candidate,1085.52,candidate flat roof,437.75,True,in both
+0480,Bolton Hall,ACADEMIC,1911,1082.7,True,candidate,874.76,candidate flat roof,456.1,True,in both
+1192,TVMC-Surgery Building,RESEARCH,1988,1076.7,True,candidate,1085.41,candidate flat roof,650.64,True,in both
+0456,Military Sciences Building,ACADEMIC,1923,1043.1,True,candidate,1064.9,candidate flat roof,569.84,True,in both
+0970,Phys Plant-Grounds Maintenance,UNIVERSITY,1983,1042.7,True,candidate,1172.59,candidate flat roof,554.33,True,in both
+0419,Legett Residence Hall,HOUSING TAMU,1911,1029.6,True,candidate,1017.1,candidate flat roof,476.76,True,in both
+0514,Munnerlyn Astronomy & Space Sciences Engineering,ACADEMIC,1960,1018.1,True,candidate,971.03,candidate flat roof,599.01,True,in both
+1519,School of Public Health - Lab Bldg,ACADEMIC,2006,1010.8,True,candidate,948.67,candidate flat roof,396.94,True,in both
+0828,Grounds Shop Warehouse,UNIVERSITY,1947,1000.4,True,candidate,1125.7,candidate flat roof,474.67,True,in both
+3197,Gardens Community Maintenance Building,HOUSING TAMU,2004,1000.3,True,candidate,1025.14,candidate flat roof,567.08,True,in both
+0470,Melbern G. Glasscock Building,ACADEMIC,1921,997.4,True,candidate,927.26,candidate flat roof,418.02,True,in both
+0415,Davis-Gary Residence Hall,HOUSING TAMU,1942,929.4,True,candidate,898.8,candidate flat roof,435.65,True,in both
+1042,Forest Science Laboratory Building,ACADEMIC,1972,924.2,True,candidate,974.72,candidate flat roof,507.83,True,in both
+0481,Heaton Hall,ACADEMIC,1926,919.1,True,candidate,849.33,candidate flat roof,425.92,True,in both
+0425,Henderson Hall,ACADEMIC,1958,902.9,True,candidate,608.32,candidate flat roof,370.09,True,in both
+0392,Mechanical Engineering Office Building,ACADEMIC,1986,896.8,True,candidate,894.8100000000001,candidate flat roof,446.15,True,in both
+0412,Moses Residence Hall,HOUSING TAMU,1942,891.5,True,candidate,818.02,candidate flat roof,438.76,True,in both
+0359,Architecture Building B,ACADEMIC,1963,870.7,True,candidate,929.29,candidate flat roof,474.9,True,in both
+0506,Nagle Hall,ACADEMIC,1909,844.6,True,candidate,803.27,candidate flat roof,269.34,True,in both
+0426,Hughes Residence Hall,HOUSING TAMU,1966,840.5,True,candidate,785.39,candidate flat roof,496.0,True,in both
+0430,Schuhmacher Residence Hall,HOUSING TAMU,1966,840.2,True,candidate,888.74,candidate flat roof,500.1,True,in both
+1404,Plank Leadership Learning Center,HOUSING TAMU,2016,837.5,True,candidate,804.33,candidate flat roof,279.52,True,in both
+0465,Butler Hall,ACADEMIC,1916,812.5,True,candidate,768.22,candidate flat roof,359.63,True,in both
+1405,"Ash, II Leadership Learning Center",HOUSING TAMU,2016,797.8,True,candidate,867.22,candidate flat roof,325.96,True,in both
+0461,Coke Building,ACADEMIC,1951,746.5,True,candidate,748.64,candidate flat roof,347.26,True,in both
+1589,White Creek Apartments Activity Center,HOUSING TAMU,2015,717.6,True,candidate,757.47,candidate flat roof,372.63,True,in both
+0992,TVMC-Experimental Animal Building,RESEARCH,1970,716.5,True,candidate,766.32,candidate flat roof,486.84,True,in both
+0067,West Campus Office Building 03,UNIVERSITY,2015,700.9,True,candidate,675.55,candidate flat roof,476.03,True,in both
+0066,West Campus Office Building 02,UNIVERSITY,2015,692.4,True,candidate,675.66,candidate flat roof,479.64,True,in both
+0672,Golf Course Clubhouse,ACADEMIC,1969,648.6,True,candidate,631.84,candidate flat roof,344.5,True,in both
+1566,Julia And Mark Ellis '79 Soccer Building,SPORTS,2003,627.1,True,candidate,669.95,candidate flat roof,226.48,True,in both
+1067,Agronomy Field Crop Laboratory,ACADEMIC,1971,588.3,True,candidate,631.63,candidate flat roof,378.07,True,in both
+0965,Beasley Laboratory,ACADEMIC,1978,570.9,True,candidate,626.7,candidate flat roof,352.52,True,in both
+0070,West Campus Office Building 04,UNIVERSITY,2015,560.2,True,candidate,551.51,candidate flat roof,391.86,True,in both
+0655,Golf Course Maintenance Shop,UNIVERSITY,1975,552.8,True,candidate,609.87,candidate flat roof,367.86,True,in both
+1625,"R.A. ""Murray"" Fasken '38 Indoor Track & Field",SPORTS,2024,11791.7,True,candidate,,,,False,new: no OSM outline in v2
+1558,Cox-McFerrin Center for Aggie Basketball,SPORTS,2009,3665.1,True,candidate,,,,False,new: no OSM outline in v2
+1631,Adam C. Sinn '00 Academic & Wellness Center,ACADEMIC,2024,3226.9,True,candidate,,,,False,new: no OSM outline in v2
+1523,Wayne Roberts '85 Building,ACADEMIC,2024,2772.9,True,candidate,,,,False,new: no OSM outline in v2
+0448,Adams Band Hall,ACADEMIC,1970,2019.5,True,candidate,,,,False,new: no OSM outline in v2
+1521,AgriLife Phenotyping Greenhouse,ACADEMIC,2022,1145.9,True,candidate,,,,False,new: no OSM outline in v2
+0517,Computing Services Annex,ACADEMIC,1966,746.9,True,candidate,,,,False,new: no OSM outline in v2
+1495,Enterprise Electrical Switching Station,UNIVERSITY,2018,717.6,True,candidate,,,,False,new: no OSM outline in v2
+1630,Coolidge Football Indoor Performance Center,SPORTS,2023,12149.7,True,candidate,10576.26,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1540,Physical Education Activity Program Building,ACADEMIC,2013,6954.1,True,candidate,7111.81,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1812,Veterinary Medicine Building 1 - VENI,ACADEMIC,2016,6110.0,True,candidate,4750.34,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0495,Sbisa Dining Hall,DINING,1912,5444.5,True,candidate,5361.25,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1814,Veterinary Medicine Building 3 - VICI,ACADEMIC,2016,4871.6,True,candidate,4356.72,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1813,Veterinary Medicine Building 2 - VIDI,ACADEMIC,2016,3974.7,True,candidate,3073.41,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1512,Southern Crop Improvement Greenhouse,ACADEMIC,2001,3651.6,True,candidate,3680.36,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1499,Satellite Utility Plant No. 2,UNIVERSITY,1988,2852.1,True,candidate,2916.07,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0377,Satellite Utility Plant No. 3,UNIVERSITY,1989,2761.9,True,candidate,1733.94,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0441,Krueger Residence Hall,HOUSING TAMU,1972,2706.9,True,candidate,2729.59,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1232,"Theriogenology Facility, Equine Reproduction",RESEARCH,2001,2205.9,True,candidate,2133.71,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0376,Chemistry,ACADEMIC,1990,2196.2,True,candidate,2055.83,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0471,Pavilion,ACADEMIC,1916,1880.0,True,candidate,1898.12,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0435,Harrington Education Center Office Tower,ACADEMIC,1973,1734.6,True,candidate,1692.96,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1187,W.P. Luse Foundation Building,UNIVERSITY,1993,1719.6,True,candidate,1237.99,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0815,Entomology Research Lab,ACADEMIC,1949,1715.6,True,candidate,2073.81,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0473,Jack K. Williams Administration Building,ACADEMIC,1932,1677.4,True,candidate,1827.19,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1184,Veterinary Anatomic Pathology,ACADEMIC,2006,1665.8,True,candidate,1518.98,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0472,AI Engineering Building,ACADEMIC,1932,1646.1,True,candidate,1619.38,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1561,George P. Mitchell '40 Tennis Center,SPORTS,1998,1537.4,True,candidate,1715.6,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0954,Agronomy Field Lab,ACADEMIC,1952,1483.1,True,candidate,1429.34,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1460,The Gardens Q,HOUSING TAMU,2011,1428.0,True,candidate,1607.4,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1459,The Gardens P,HOUSING TAMU,2011,1426.3,True,candidate,1629.46,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1457,The Gardens M,HOUSING TAMU,2011,1407.1,True,candidate,1643.99,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1458,The Gardens N,HOUSING TAMU,2011,1397.5,True,candidate,1622.84,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0165,Schubot Exotic Bird Health Center,RESEARCH,2014,1387.6,True,candidate,1354.92,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0387,Joe C. Richardson Petroleum Engineering Building,ACADEMIC,1990,1280.1,True,candidate,1184.9,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+3199,Becky Gates Childrens Center,ACADEMIC,1998,1248.8,True,candidate,1674.11,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0460,Engineering Activities Bldg A,ACADEMIC,1954,1240.3,True,candidate,1254.75,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0512,All Faiths Chapel,ACADEMIC,1957,1216.7,True,candidate,1275.48,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0458,Engineering Activities Bldg C,ACADEMIC,1954,1145.2,True,candidate,1137.78,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1567,Softball Building,SPORTS,2003,1065.5,True,candidate,1201.53,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0420,Milner Hall,ACADEMIC,1911,1035.7,True,candidate,976.45,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0408,Whiteley Hall-Dorm 9,HOUSING TAMU,1938,1006.5,True,candidate,1076.69,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0410,Harrington Hall-Dorm 11,HOUSING TAMU,1938,994.1,True,candidate,1129.75,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0411,Utay Hall-Dorm 12,HOUSING TAMU,1938,988.5,True,candidate,1111.7,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0409,White Hall-Dorm 10,HOUSING TAMU,1938,981.2,True,candidate,983.82,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1568,Varsity Soccer Press Box,SPORTS,2004,955.3,True,candidate,1111.57,open-air sports structure (no roof),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0400,Spence Hall-Dorm 1,HOUSING TAMU,1938,880.3,True,candidate,1087.7,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0401,Kiest Hall-Dorm 2,HOUSING TAMU,1938,879.7,True,candidate,1084.35,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0402,Briggs Hall-Dorm 3,HOUSING TAMU,1938,871.9,True,candidate,862.82,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0404,Gainer Hall-Dorm 5,HOUSING TAMU,1938,870.3,True,candidate,1046.43,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0406,Leonard Hall-Dorm 7,HOUSING TAMU,1938,864.6,True,candidate,868.25,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0403,Fountain Hall-Dorm 4,HOUSING TAMU,1938,855.4,True,candidate,887.35,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0405,Lacy Hall-Dorm 6,HOUSING TAMU,1938,838.9,True,candidate,926.77,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0407,Harrell Hall-Dorm 8,HOUSING TAMU,1938,815.6,True,candidate,881.26,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0296,Mitchell Inst for Fundamental Phys & Astronomy,ACADEMIC,2009,814.7,True,candidate,765.18,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1030,AG Engr Res Lab & Shop,ACADEMIC,1960,802.3,True,candidate,772.89,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1440,Golf Cart Storage Building,UNIVERSITY,2013,778.4,True,candidate,722.35,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0459,Engineering Activities Bldg B,ACADEMIC,1949,776.5,True,candidate,854.45,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1234,Dry Feed Storage Facility,AGRICULTURE,2003,759.4,True,candidate,825.84,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+9351,Water Tower (Insulation Shop),UNIVERSITY,1979,703.9,True,candidate,747.26,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0072,West Campus Office Building 05,UNIVERSITY,2017,702.6,True,candidate,660.96,LiDAR height < 2.5 m - verify,0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1064,Soil & Crop Sciences Greenhouse,ACADEMIC,1967,684.9,True,candidate,679.32,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1051,Center for Urban and Structural Entomology (CUSE),ACADEMIC,1988,675.8,True,candidate,706.57,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0806,Soil Testing Lab,ACADEMIC,1954,607.6,True,candidate,740.43,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0955,Soil/Crop Cotton Genetic Greenhouse,ACADEMIC,1988,607.0,True,candidate,831.89,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1516,Horticulture Field Laboratory,UNIVERSITY,1997,580.1,True,candidate,610.05,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1002,Farm Service Implement #2,UNIVERSITY,1955,578.0,True,candidate,633.64,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1001,Farm Service Implement #1,UNIVERSITY,1955,572.1,True,candidate,561.09,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0991,VMP Shop,RESEARCH,1968,537.3,True,candidate,570.1,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+1066,Cotton Ginning Lab,ACADEMIC,1966,534.9,True,candidate,604.99,pitched or cluttered (<40% locally flat),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0424,Hotard Hall,ACADEMIC,1941,504.8,True,candidate,462.27,too small (<500 m2),0.0,False,new: v2 dropped it (LiDAR/size/owner)
+0367,Kyle Field,SPORTS,1927,51478.9,False,open-air venue (no roof deck),50769.23,pitched or cluttered (<40% locally flat),0.0,False,out in both
+1524,Aplin Center,CONSTRUCTION,,9505.1,False,under construction in TAMU layer - check imagery,,,,False,out in both
+6891,,CONSTRUCTION,,7270.3,False,under construction in TAMU layer - check imagery,,,,False,out in both
+1819,Linda and Dennis Clark '68 Small Animal Teaching Hospital,CONSTRUCTION,,6989.0,False,under construction in TAMU layer - check imagery,3117.63,shelter / under construction,0.0,False,out in both
+1550,Olsen Field at Bluebell Park,SPORTS,1979,4655.9,False,open-air venue (no roof deck),4657.19,pitched or cluttered (<40% locally flat),0.0,False,out in both
+1583,Davis Diamond Softball Stadium,SPORTS,2018,4152.8,False,open-air venue (no roof deck),4140.44,open-air sports structure (no roof),0.0,False,out in both
+1584,E.B. Cushing Stadium,SPORTS,2018,4116.2,False,open-air venue (no roof deck),1032.07,open-air sports structure (no roof),0.0,False,out in both
+1539,,CONSTRUCTION,,3211.5,False,under construction in TAMU layer - check imagery,,,,False,out in both
+0375,Williams Alumni Center,THE ASSOCIATION,1986,3032.5,False,"affiliated entity, not university-owned",,,,False,out in both
+3100,Hagler Center,TAMU FOUNDATION,1998,2415.0,False,"affiliated entity, not university-owned",,,,False,out in both
+1609,West Campus Social Sciences Building,ACADEMIC,2010,2382.1,False,mostly outside the LiDAR / imagery tile,344.55,too small (<500 m2),0.0,False,out in both
+1237,Equine Athletic Riding Arena,ACADEMIC,2008,1661.8,False,not a building (TAMU IsBldg = N),1619.34,pitched or cluttered (<40% locally flat),0.0,False,out in both
+1556,Penberthy Intramural Sports Center,SPORTS,1986,643.0,False,mostly outside the LiDAR / imagery tile,205.34,too small (<500 m2),0.0,False,out in both
+0989,TVMC-Caged Animals,RESEARCH,1968,481.6,False,too small (< 500 m2),523.99,pitched or cluttered (<40% locally flat),0.0,False,out in both
+0862,Butler Building,ACADEMIC,1958,473.4,False,too small (< 500 m2),478.75,too small (<500 m2),0.0,False,out in both
+0510,Adriance Lab,UNIVERSITY,1955,471.0,False,too small (< 500 m2),453.71,too small (<500 m2),0.0,False,out in both
+1403,"H. Grady Ash, Jr. '58 Leadership Learning Center",HOUSING TAMU,2014,468.3,False,too small (< 500 m2),352.24,too small (<500 m2),0.0,False,out in both
+0829,Grounds Maintenance Office Shop/Stor,UNIVERSITY,1947,450.9,False,too small (< 500 m2),424.9,too small (<500 m2),0.0,False,out in both
+0482,Fermier Hall,ACADEMIC,1919,445.7,False,too small (< 500 m2),486.11,too small (<500 m2),0.0,False,out in both
+3190,Becky Gates Childrens Center Multipurpose Bldg,UNIVERSITY,2009,445.6,False,too small (< 500 m2),,,,False,out in both
+0071,West Campus Office Building 06,UNIVERSITY,2017,443.0,False,too small (< 500 m2),422.56,too small (<500 m2),0.0,False,out in both
+0685,Grounds Maintenance-Tractor Shed,UNIVERSITY,1986,426.0,False,too small (< 500 m2),441.93,too small (<500 m2),0.0,False,out in both
+1402,Buzbee Leadership Learning Center,HOUSING TAMU,2012,425.6,False,too small (< 500 m2),357.32,too small (<500 m2),0.0,False,out in both
+1461,Gardens Community Learning Center,HOUSING TAMU,2011,419.9,False,too small (< 500 m2),439.44,too small (<500 m2),0.0,False,out in both
+1186,TVMC-Isolation Laboratory,UNIVERSITY,1993,417.1,False,too small (< 500 m2),,,,False,out in both
+1641,Creamery in Aggie Park,UNIVERSITY,2022,416.6,False,too small (< 500 m2),405.6,too small (<500 m2),0.0,False,out in both
+1570,Omar Smith Instructional Tennis Center,SPORTS,2003,414.6,False,mostly outside the LiDAR / imagery tile,184.22,too small (<500 m2),0.0,False,out in both
+8901,GSC Portable Building,UNIVERSITY,2002,399.8,False,too small (< 500 m2),,,,False,out in both
+0997,Tick Research Facility,RESEARCH,1984,397.2,False,too small (< 500 m2),436.32,too small (<500 m2),0.0,False,out in both
+1532,Teaching Gardens Pavilion,UNIVERSITY,2017,395.9,False,too small (< 500 m2),411.18,too small (<500 m2),0.0,False,out in both
+1043,Mosquito Research Lab,ACADEMIC,1973,394.5,False,too small (< 500 m2),387.67,too small (<500 m2),0.0,False,out in both
+1642,Events Pavilion in Aggie Park,UNIVERSITY,2022,393.7,False,too small (< 500 m2),432.16,too small (<500 m2),0.0,False,out in both
+1003,Farm Service Shop,UNIVERSITY,1955,390.9,False,too small (< 500 m2),415.72,too small (<500 m2),0.0,False,out in both
+0733,Grounds Maintenance Greenhouse,UNIVERSITY,1975,388.6,False,too small (< 500 m2),395.29,too small (<500 m2),0.0,False,out in both
+1040,Cardiovascular Pathology Laboratory,RESEARCH,1969,387.3,False,too small (< 500 m2),407.17,too small (<500 m2),0.0,False,out in both
+0732,Grounds Maintenance Greenhouse,UNIVERSITY,1975,373.1,False,too small (< 500 m2),407.3,too small (<500 m2),0.0,False,out in both
+0990,Cardiovascular Pathology Lab Annex,RESEARCH,1967,370.1,False,too small (< 500 m2),398.81,too small (<500 m2),0.0,False,out in both
+1248,Transportation Car/Bus Wash Building,UNIVERSITY,2006,361.3,False,too small (< 500 m2),,,,False,out in both
+1094,TVMC-Poultry Disease Research,RESEARCH,1981,354.8,False,too small (< 500 m2),362.26,too small (<500 m2),0.0,False,out in both
+1193,Wildlife & Exotic Animal Ctr,RESEARCH,1990,344.3,False,too small (< 500 m2),345.94,too small (<500 m2),0.0,False,out in both
+0065,West Campus Office Building 01,UNIVERSITY,2015,336.9,False,too small (< 500 m2),329.67,too small (<500 m2),0.0,False,out in both
+1497,Utilities & Energy Services Business Office,UNIVERSITY,1995,333.6,False,too small (< 500 m2),431.33,too small (<500 m2),0.0,False,out in both
+1466,Metal Horse Barn,RESEARCH,2018,325.6,False,too small (< 500 m2),,,,False,out in both
+1065,Soil & Crop Sci Dry Processing,ACADEMIC,1966,325.3,False,too small (< 500 m2),373.63,too small (<500 m2),0.0,False,out in both
+1179,Forest Science Greenhouse,UNIVERSITY,1987,323.9,False,too small (< 500 m2),307.22,too small (<500 m2),0.0,False,out in both
+1177,Horticulture/Forest Science Greenhouse,UNIVERSITY,1987,323.3,False,too small (< 500 m2),338.9,too small (<500 m2),0.0,False,out in both
+0831,Grounds Maintenance Greenhouse,UNIVERSITY,1969,323.2,False,too small (< 500 m2),345.15,too small (<500 m2),0.0,False,out in both
+0966,Purchasing & Stores-General Storage,UNIVERSITY,1976,322.9,False,too small (< 500 m2),,,,False,out in both
+1176,Hort/FS Greenhouse,UNIVERSITY,1987,322.1,False,too small (< 500 m2),321.84,too small (<500 m2),0.0,False,out in both
+1178,Horticulture/Forest Science Greenhouse,UNIVERSITY,1987,318.8,False,too small (< 500 m2),330.11,too small (<500 m2),0.0,False,out in both
+1415,Civilian Lounge-A3,HOUSING TAMU,1964,314.7,False,too small (< 500 m2),300.0,too small (<500 m2),0.0,False,out in both
+0943,TVMC-Barn No 2,RESEARCH,1957,314.6,False,too small (< 500 m2),354.66,too small (<500 m2),0.0,False,out in both
+1496,12.47 KV Switching Station,UNIVERSITY,2000,313.6,False,too small (< 500 m2),,,,False,out in both
+0742,Grounds Maintenance Storage,UNIVERSITY,1970,313.2,False,too small (< 500 m2),315.28,too small (<500 m2),0.0,False,out in both
+1427,Civilian Lounge-A1,HOUSING TAMU,1964,313.1,False,too small (< 500 m2),261.95,too small (<500 m2),0.0,False,out in both
+0717,Storage and Lab-Cyclotron,ACADEMIC,1971,312.4,False,too small (< 500 m2),,,,False,out in both
+1430,Civilian Lounge-C1,HOUSING TAMU,1964,309.6,False,too small (< 500 m2),,,,False,out in both
+1195,Non Surgical Animal Procedure,RESEARCH,1995,304.7,False,too small (< 500 m2),,,,False,out in both
+1450,Gardens Laundry,HOUSING TAMU,2010,304.1,False,too small (< 500 m2),245.95,too small (<500 m2),0.0,False,out in both
+1412,Civilian Lounge-A2,HOUSING TAMU,1964,302.5,False,too small (< 500 m2),291.02,too small (<500 m2),0.0,False,out in both
+0256,CUP Modular,UNIVERSITY,2021,300.9,False,too small (< 500 m2),,,,False,out in both
+1008,TVMC-Barn No 3,RESEARCH,1957,292.9,False,too small (< 500 m2),301.32,too small (<500 m2),0.0,False,out in both
+9750,by USDA-Exotic Animal Holding Pens,RESEARCH,,292.2,False,not a building (TAMU IsBldg = N),,,,False,out in both
+1060,Greenhouse-Small Grains,UNIVERSITY,1966,286.8,False,too small (< 500 m2),286.81,too small (<500 m2),0.0,False,out in both
+0728,Grounds Maintenance Greenhouse 5,UNIVERSITY,1976,286.1,False,too small (< 500 m2),302.6,too small (<500 m2),0.0,False,out in both
+0960,SCS Forage Greenhouse,UNIVERSITY,1978,283.9,False,too small (< 500 m2),248.9,too small (<500 m2),0.0,False,out in both
+0961,Cotton Greenhouse,UNIVERSITY,1978,278.8,False,too small (< 500 m2),291.71,too small (<500 m2),0.0,False,out in both
+0959,Plant Science Greenhouse,UNIVERSITY,1978,278.6,False,too small (< 500 m2),309.58,too small (<500 m2),0.0,False,out in both
+1077,SCSC Small Grain Greenhouse,UNIVERSITY,1978,274.3,False,too small (< 500 m2),315.83,too small (<500 m2),0.0,False,out in both
+0726,Grounds Maintenance Greenhouse 4,UNIVERSITY,1976,274.1,False,too small (< 500 m2),290.07,too small (<500 m2),0.0,False,out in both
+1078,Soil & Crop Peanut Greenhouse,UNIVERSITY,1977,267.3,False,too small (< 500 m2),284.43,too small (<500 m2),0.0,False,out in both
+8902,BUILD Pavilion,UNIVERSITY,2024,266.2,False,too small (< 500 m2),,,,False,out in both
+1079,SCSC-Weed Sci Greenhouse,UNIVERSITY,1978,264.8,False,too small (< 500 m2),282.12,too small (<500 m2),0.0,False,out in both
+1045,USDA Greenhouse 1,UNIVERSITY,1965,262.0,False,too small (< 500 m2),281.92,too small (<500 m2),0.0,False,out in both
+1049,USDA Greenhouse 2,UNIVERSITY,1970,260.3,False,too small (< 500 m2),267.23,too small (<500 m2),0.0,False,out in both
+0956,Perennial Grass Breeding and Genetics,RESEARCH,1962,250.9,False,too small (< 500 m2),275.13,too small (<500 m2),0.0,False,out in both
+1084,West Campus Switching Station,UNIVERSITY,1980,245.9,False,too small (< 500 m2),259.84,too small (<500 m2),0.0,False,out in both
+1571,West Campus Office Pavilion,SPORTS,2009,237.8,False,too small (< 500 m2),225.05,too small (<500 m2),0.0,False,out in both
+0995,Water Distribution Pump Station No. 2,UNIVERSITY,1975,228.8,False,too small (< 500 m2),,,,False,out in both
+1050,CUSE-Research Labs,ACADEMIC,1988,225.9,False,too small (< 500 m2),244.14,too small (<500 m2),0.0,False,out in both
+1196,Animal Housing Unit,RESEARCH,1987,214.2,False,too small (< 500 m2),212.21,too small (<500 m2),0.0,False,out in both
+1488,UES IT Modular Building,UNIVERSITY,2017,213.3,False,too small (< 500 m2),,,,False,out in both
+0964,Agronomy Greenhouse,UNIVERSITY,1976,202.2,False,too small (< 500 m2),200.79,too small (<500 m2),0.0,False,out in both
+1087,CMP-Quarantine Unit,RESEARCH,1980,201.7,False,too small (< 500 m2),115.6,too small (<500 m2),0.0,False,out in both
+0962,Plant Science Grain Sorghum Greenhouse,UNIVERSITY,1976,195.4,False,too small (< 500 m2),200.74,too small (<500 m2),0.0,False,out in both
+1555,Track & Field Support Center,SPORTS,1986,193.0,False,too small (< 500 m2),197.65,too small (<500 m2),0.0,False,out in both
+0963,Hort & Plant Science Greenhouse,UNIVERSITY,1976,192.1,False,too small (< 500 m2),198.38,too small (<500 m2),0.0,False,out in both
+1063,Greenhouse-Cotton Taxonomy,UNIVERSITY,1967,190.2,False,too small (< 500 m2),199.36,too small (<500 m2),0.0,False,out in both
+1047,Virus-Vector Research Lab,UNIVERSITY,1988,189.3,False,too small (< 500 m2),202.54,too small (<500 m2),0.0,False,out in both
+4542,TVMC-Wildlife & Exotic Animals,RESEARCH,1963,185.2,False,too small (< 500 m2),,,,False,out in both
+0816,Water Distribution Pump Station No. 1,UNIVERSITY,1953,175.3,False,too small (< 500 m2),,,,False,out in both
+0973,CMP-Animal Housing Unit,RESEARCH,1978,168.8,False,too small (< 500 m2),215.78,too small (<500 m2),0.0,False,out in both
+0974,CMP-Animal Housing Unit,RESEARCH,1978,168.8,False,too small (< 500 m2),221.28,too small (<500 m2),0.0,False,out in both
+0975,CMP-Animal Housing Unit,RESEARCH,1978,168.8,False,too small (< 500 m2),210.67,too small (<500 m2),0.0,False,out in both
+0976,CMP-Animal Housing Unit,RESEARCH,1978,168.8,False,too small (< 500 m2),221.21,too small (<500 m2),0.0,False,out in both
+1086,CMP-Housing Unit,RESEARCH,1980,168.8,False,too small (< 500 m2),240.91,too small (<500 m2),0.0,False,out in both
+1644,Distinguished Alumni Memorial in Aggie Park,THE ASSOCIATION,,158.8,False,"affiliated entity, not university-owned",,,,False,out in both
+9101,Agronomy Road 138kV Substation Control House,UNIVERSITY,1994,158.2,False,too small (< 500 m2),,,,False,out in both
+0861,CUSE-Chemistry,ACADEMIC,1958,154.1,False,too small (< 500 m2),155.26,too small (<500 m2),0.0,False,out in both
+1905,Texas A&M Institute for Preclinical Studies B,UNIVERSITY,2009,152.5,False,too small (< 500 m2),104.58,too small (<500 m2),0.0,False,out in both
+1906,Texas A&M Institute for Preclinical Studies C,UNIVERSITY,2009,150.7,False,too small (< 500 m2),105.18,too small (<500 m2),0.0,False,out in both
+0276,TX Forest Service Greenhouse,UNIVERSITY,1972,149.2,False,too small (< 500 m2),,,,False,out in both
+1068,Crop Testing,ACADEMIC,1971,144.0,False,too small (< 500 m2),,,,False,out in both
+0715,Chemistry Chemical Storage,ACADEMIC,1955,143.9,False,too small (< 500 m2),,,,False,out in both
+8578,Water Lab at CUP,UNIVERSITY,2000,138.8,False,too small (< 500 m2),,,,False,out in both
+1167,CUSE-Insect Testing Lab,UNIVERSITY,1962,136.9,False,too small (< 500 m2),118.07,too small (<500 m2),0.0,False,out in both
+1441,EMS Vehicle Cover,VEH SHELTER,2025,135.4,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+0967,Purchasing & Stores-Volatile Storage,UNIVERSITY,1976,131.4,False,too small (< 500 m2),,,,False,out in both
+1198,LARR Support Personnel Bldg,RESEARCH,1987,131.2,False,too small (< 500 m2),123.05,too small (<500 m2),0.0,False,out in both
+1058,Soil & Crop Sci Greenhouse,UNIVERSITY,1965,130.9,False,too small (< 500 m2),125.83,too small (<500 m2),0.0,False,out in both
+0277,,UNIVERSITY,,127.9,False,too small (< 500 m2),,,,False,out in both
+1168,CUSE-Shop & Storage,UNIVERSITY,1965,127.6,False,too small (< 500 m2),172.78,too small (<500 m2),0.0,False,out in both
+1166,CUSE-Special Project Lab & Storage,UNIVERSITY,1962,126.7,False,too small (< 500 m2),126.9,too small (<500 m2),0.0,False,out in both
+0278,TX Forest Service Greenhouse,UNIVERSITY,1981,122.9,False,too small (< 500 m2),,,,False,out in both
+0977,CMP-Animal Housing Unit,RESEARCH,1978,122.5,False,too small (< 500 m2),155.92,too small (<500 m2),0.0,False,out in both
+1572,Soccer/Intramural Restroom,SPORTS,2011,119.0,False,too small (< 500 m2),,,,False,out in both
+1052,Grazingland Animal Nutrition Lab,RESEARCH,1965,117.0,False,too small (< 500 m2),121.69,too small (<500 m2),0.0,False,out in both
+0249,Cold Storage - Corps Dining,DINING,2024,110.7,False,too small (< 500 m2),,,,False,out in both
+1056,Soil & Crop Sci Greenhouse,UNIVERSITY,1965,101.8,False,too small (< 500 m2),115.53,too small (<500 m2),0.0,False,out in both
+1057,Soil & Crop Sci Greenhouse,UNIVERSITY,1964,101.3,False,too small (< 500 m2),108.25,too small (<500 m2),0.0,False,out in both
+N023,Teaching Gardens-Grand Arbor,UNIVERSITY,,101.1,False,not a building (TAMU IsBldg = N),,,,False,out in both
+1242,Utilities Water Operations Building F & B Storage,UNIVERSITY,2001,100.7,False,too small (< 500 m2),,,,False,out in both
+N020,Teaching Gardens-Outdoor Classroom,UNIVERSITY,,100.4,False,not a building (TAMU IsBldg = N),,,,False,out in both
+1054,Forage and Turf Greenhouse,UNIVERSITY,1964,100.0,False,too small (< 500 m2),112.82,too small (<500 m2),0.0,False,out in both
+0547,Break Room at Central Utility Plant,UNIVERSITY,1980,99.6,False,too small (< 500 m2),,,,False,out in both
+1059,Soil & Crop Sci Greenhouse,UNIVERSITY,1965,99.0,False,too small (< 500 m2),86.68,too small (<500 m2),0.0,False,out in both
+0824,Grounds Maintenance Implement Shed,UNIVERSITY,1937,86.6,False,too small (< 500 m2),94.35,too small (<500 m2),0.0,False,out in both
+1526,Aplin Center BBQ Pavilion,CONSTRUCTION,,85.0,False,under construction in TAMU layer - check imagery,,,,False,out in both
+1493,Agronomy Road - T8 PCR,UNIVERSITY,2024,83.7,False,not a building (TAMU IsBldg = N),,,,False,out in both
+0289,Central Utility Plant Electrical Building,UNIVERSITY,2015,81.9,False,too small (< 500 m2),,,,False,out in both
+1000,Farm Service Office,UNIVERSITY,1957,78.7,False,too small (< 500 m2),,,,False,out in both
+1173,Soil & Crop Greenhouse,UNIVERSITY,1986,77.7,False,too small (< 500 m2),,,,False,out in both
+0399,,UNIVERSITY,,70.7,False,too small (< 500 m2),,,,False,out in both
+8577,Flammable Materials Storage at CUP,UNIVERSITY,2008,70.7,False,too small (< 500 m2),,,,False,out in both
+1699,GTE Optical Remote Module (ODM) Facility @ Research Park,UNIVERSITY,1985,70.2,False,too small (< 500 m2),,,,False,out in both
+N025,Teaching Gardens-The Overlook,UNIVERSITY,2025,66.3,False,not a building (TAMU IsBldg = N),48.82,too small (<500 m2),0.0,False,out in both
+1249,Telecommunications Optical Remote Building,UNIVERSITY,2002,65.3,False,too small (< 500 m2),,,,False,out in both
+0350,Albritton Bell Tower,UNIVERSITY,1984,63.8,False,too small (< 500 m2),,,,False,out in both
+1643,Amphitheater in Aggie Park,UNIVERSITY,,59.5,False,not a building (TAMU IsBldg = N),,,,False,out in both
+0389,Grounds Maintenance Potting Shed,UNIVERSITY,1986,56.0,False,too small (< 500 m2),69.41,too small (<500 m2),0.0,False,out in both
+0357,Aggie Express - Pavilion,UNIVERSITY,1999,53.7,False,too small (< 500 m2),47.83,too small (<500 m2),0.0,False,out in both
+9797,Bonfire Memorial,UNIVERSITY,2024,52.9,False,not a building (TAMU IsBldg = N),,,,False,out in both
+1188,Forest Science Storage,UNIVERSITY,1984,49.9,False,too small (< 500 m2),,,,False,out in both
+1585,12th Man Productions Building,SPORTS,2018,49.1,False,mostly outside the LiDAR / imagery tile,,,,False,out in both
+1569,Mitchell Tennis Center Ticket Booth,SPORTS,2004,47.5,False,too small (< 500 m2),,,,False,out in both
+N021,Teaching Gardens Entry-Left,UNIVERSITY,,47.5,False,not a building (TAMU IsBldg = N),,,,False,out in both
+0718,Storage-Cyclotron,UNIVERSITY,1971,47.2,False,too small (< 500 m2),,,,False,out in both
+9210,LIFT STATION-Golf Course 1 (SW corner of golf course),MECH,2026,47.2,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+N022,Teaching Gardens Entry-Right,UNIVERSITY,,46.2,False,not a building (TAMU IsBldg = N),,,,False,out in both
+0279,TX Forest Service GH Headhouse,UNIVERSITY,1980,44.6,False,too small (< 500 m2),,,,False,out in both
+1462,The Gardens - storage shed,UNIVERSITY,2025,44.5,False,not a building (TAMU IsBldg = N),,,,False,out in both
+9212,,MECH,,42.5,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+0356,The HUB-Bike Maintenance Shack,UNIVERSITY,1997,42.0,False,too small (< 500 m2),45.74,too small (<500 m2),0.0,False,out in both
+1169,CUSE-Toxicology Hut,UNIVERSITY,1967,36.9,False,too small (< 500 m2),,,,False,out in both
+4540,,RESEARCH,,35.0,False,too small (< 500 m2),,,,False,out in both
+8800,Bonfire Memorial Restroom,UNIVERSITY,2004,34.0,False,too small (< 500 m2),,,,False,out in both
+0996,Oil Tanks Boiler House,UNIVERSITY,1980,32.6,False,too small (< 500 m2),,,,False,out in both
+N024,Teaching Gardens-Farmer's Market,UNIVERSITY,,29.0,False,not a building (TAMU IsBldg = N),,,,False,out in both
+9791,Billy Pickard Pedestrian Passageway,MECH,2024,27.5,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+1241,LARR Support Shop B,RESEARCH,,24.6,False,not a building (TAMU IsBldg = N),,,,False,out in both
+N027,Teaching Gardens-West Pergola,UNIVERSITY,2025,17.8,False,not a building (TAMU IsBldg = N),,,,False,out in both
+N026,Teaching Gardens-East Pergola,UNIVERSITY,2025,17.7,False,not a building (TAMU IsBldg = N),,,,False,out in both
+0983,Trans Center Paint Storage,UNIVERSITY,1978,16.7,False,too small (< 500 m2),,,,False,out in both
+1815,Cold Storage (right),UNIVERSITY,2011,13.9,False,too small (< 500 m2),,,,False,out in both
+1816,Cold Storage (left),UNIVERSITY,2011,13.9,False,too small (< 500 m2),,,,False,out in both
+9215,,MECH,,12.7,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+1172,Flammable Mat Storage,UNIVERSITY,1986,9.4,False,too small (< 500 m2),,,,False,out in both
+9221,,MECH,,7.3,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+9795,Wellborn Road Grade Separation Pumps,MECH,,1.5,False,shelter / mechanical / storage (no usable roof),,,,False,out in both
+0117,,,,,False,,1110.37,not university,0.0,False,out in both
+1545,,,,,False,,5882.98,not university,0.0,False,out in both
+2957,,,,,False,,7384.1,not university,0.0,False,out in both
+PA01,,,,,False,,1264.6,not university,0.0,False,out in both
+PA02,,,,,False,,1262.45,not university,0.0,False,out in both
+PA03,,,,,False,,1437.88,not university,0.0,False,out in both
+PA04,,,,,False,,1574.12,not university,0.0,False,out in both
+PA05,,,,,False,,1565.58,not university,0.0,False,out in both
+PA06,,,,,False,,1687.59,not university,0.0,False,out in both
+PA07,,,,,False,,1593.49,not university,0.0,False,out in both
+PA08,,,,,False,,1795.96,not university,0.0,False,out in both
+PA09,,,,,False,,1819.81,not university,0.0,False,out in both
+PA10,,,,,False,,1801.74,not university,0.0,False,out in both
+PA11,,,,,False,,120.29,not university,0.0,False,out in both
+PC02,,,,,False,,2054.96,not university,0.0,False,out in both
+PC04,,,,,False,,528.75,not university,0.0,False,out in both
+PC05,,,,,False,,2072.51,not university,0.0,False,out in both
+PC10,,,,,False,,4454.21,not university,0.0,False,out in both
+PC11,,,,,False,,283.08,not university,0.0,False,out in both
+PC12,,,,,False,,8368.75,not university,0.0,False,out in both
+PC13,,,,,False,,1782.2,not university,0.0,False,out in both
+PC14,,,,,False,,827.67,not university,0.0,False,out in both
+PC15,,,,,False,,552.05,not university,0.0,False,out in both
+PC16,,,,,False,,1424.78,not university,0.0,False,out in both
+PC17,,,,,False,,2392.5,not university,0.0,False,out in both
+PC18,,,,,False,,2349.35,not university,0.0,False,out in both
+PC19,,,,,False,,557.74,not university,0.0,False,out in both
+PC22,,,,,False,,1711.77,not university,0.0,False,out in both
+PC23,,,,,False,,1774.66,not university,0.0,False,out in both
+PC24,,,,,False,,640.11,not university,0.0,False,out in both
+PC25,,,,,False,,1594.32,not university,0.0,False,out in both
+PC26,,,,,False,,3169.87,not university,0.0,False,out in both
+PC27,,,,,False,,4461.79,not university,0.0,False,out in both
+1910,National Center for Therapeutics Manufacturing,RESEARCH,2011,11757.4,False,mostly outside the LiDAR / imagery tile,1736.81,candidate flat roof,1009.56,True,v2 only: dropped here
+1611,Giesecke Engineering Research Building,ACADEMIC,2015,3352.8,False,mostly outside the LiDAR / imagery tile,1364.8,candidate flat roof,431.7,True,v2 only: dropped here
+1029,Agronomy Implement Storage,UNIVERSITY,1960,475.0,False,too small (< 500 m2),527.07,candidate flat roof,227.83,True,v2 only: dropped here
+0979,Turfgrass Field Lab,ACADEMIC,1978,468.2,False,too small (< 500 m2),512.67,candidate flat roof,258.58,True,v2 only: dropped here
+0747,Grounds Maintenance Supply Bldg,UNIVERSITY,1975,465.8,False,too small (< 500 m2),509.35,candidate flat roof,319.35,True,v2 only: dropped here

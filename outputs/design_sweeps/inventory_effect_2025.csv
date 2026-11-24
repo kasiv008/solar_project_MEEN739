@@ -1,0 +1,11 @@
+land,design,area_ha,MWdc,GWh,kwh_per_kwdc
+flat roofs,"current: 10 deg rows, 140, GCR 0.76",37.7,56.4,77.9,1430
+flat roofs,"5 deg rows, 140, Dec-21 GCR 0.85",37.7,63.1,86.1,1412
+flat roofs,"east-west 10 deg, GCR 0.95",37.7,70.5,88.7,1302
+flat roofs,"east-west 5 deg, GCR 0.95",37.7,70.5,92.3,1355
+carports,"current: 7 deg, stall-aligned 140",23.3,42.0,59.6,1445
+carports,"5 deg, stall-aligned 140",23.3,42.0,59.1,1432
+open land,"fixed 25 deg, GCR 0.5 (current)",83.1,81.8,120.5,1515
+open land,"fixed 20 deg, GCR 0.7 (max per m2)",83.1,114.5,166.1,1491
+open land,tracker GCR 0.35 (current),83.1,57.3,99.5,1787
+open land,tracker GCR 0.5 (max per m2),83.1,81.8,136.2,1713

@@ -1,0 +1,141 @@
+{
+  "_source": "Team4_SAM_Inputs.xlsx 'SAM cases' sheet; PVWatts v8 (PySAM.Pvwattsv8) variable names",
+  "weather_file": "data/raw/weather/college_station_TX_30.6205_-96.3259_nsrdb-GOES-tmy-v4-0-0_60_tmy.csv",
+  "module": {
+    "name": "Hyperion HY-WH108P8-410",
+    "p_mp_w": 410,
+    "module_type": 1,
+    "kw_per_m2_module": 0.197,
+    "_note": "module_type 1 = premium (PVWatts); kW per m2 of module area = 0.15 kWdc/m2 / GCR 0.76"
+  },
+  "losses_pct_components": {
+    "soiling": 2,
+    "shading": 3,
+    "mismatch": 2,
+    "wiring": 2,
+    "connections": 0.5,
+    "lid": 1.5,
+    "nameplate": 1,
+    "availability": 3
+  },
+  "losses_pct_site_shading": 11.42,
+  "_losses_note": "PVWatts default total is 14.08 % including a generic 3 % shading; sites in this inventory carry their own LiDAR shading (shading_azal / shading_diff), so use losses_pct_site_shading (the same components without shading).",
+  "dc_ac_ratio": 1.2,
+  "inv_eff": 96,
+  "albedo": 0.2,
+  "analysis_period_yr": 25,
+  "degradation_pct_per_yr": 0.5,
+  "archetypes": {
+    "roof_flat_rack": {
+      "array_type": 1,
+      "tilt": 10,
+      "gcr": 0.76,
+      "kw_per_m2": 0.15,
+      "_note": "fixed roof mount, 10 deg rows; azimuth = row_azimuth (edge-aligned) or 180",
+      "mount": "ballasted low-tilt rack (no roof penetrations)",
+      "structure": "roof deck; ballast load check",
+      "cost_key": "roof"
+    },
+    "roof_flush_pitch": {
+      "array_type": 1,
+      "tilt": "surface",
+      "gcr": 0.9,
+      "kw_per_m2": 0.18,
+      "_note": "flush on the pitched face: tilt/azimuth = LiDAR plane; 0.9 packing",
+      "mount": "flush rail mount on the pitched face (penetrations)",
+      "structure": "roof deck",
+      "cost_key": "roof"
+    },
+    "carport": {
+      "array_type": 0,
+      "tilt": 7,
+      "gcr": 0.95,
+      "kw_per_m2": 0.18,
+      "mount": "steel carport canopy (single/double cantilever) over stall rows",
+      "structure": "new steel + drilled-pier foundations",
+      "cost_key": "carport",
+      "_note": "kW per m2 of canopy over the stall rows (modules ~0.197 kW/m2, ~0.9 packing); v1 used 0.10 per m2 of whole lot incl. aisles"
+    },
+    "ground_fixed": {
+      "array_type": 0,
+      "tilt": 25,
+      "azimuth": 180,
+      "gcr": 0.5,
+      "kw_per_m2": 0.1,
+      "mount": "driven-pile fixed-tilt racking",
+      "structure": "piles, fencing, site prep",
+      "cost_key": "ground_fixed"
+    },
+    "ground_tracker": {
+      "array_type": 2,
+      "tilt": 0,
+      "azimuth": 180,
+      "gcr": 0.35,
+      "kw_per_m2": 0.07,
+      "backtracking": true,
+      "rotlim": 45,
+      "mount": "single-axis tracker, N-S axis, backtracking",
+      "structure": "piles, tracker drives, fencing",
+      "cost_key": "ground_tracker"
+    },
+    "garage_top_canopy": {
+      "array_type": 0,
+      "tilt": 7,
+      "gcr": 0.9,
+      "kw_per_m2": 0.1,
+      "azimuth": "row_azimuth (stall rows follow the garage grid)",
+      "mount": "elevated steel canopy over the top parking deck",
+      "structure": "canopy columns on the garage column grid; structural review of the (often post-tensioned) deck",
+      "cost_key": "carport",
+      "_note": "top decks stay in use for parking, so a ballasted rack is not an option"
+    }
+  },
+  "screening": {
+    "max_annual_shade_loss": 0.2,
+    "_note": "cells losing > 20 % of their unshaded annual irradiance are not usable (NREL rooftop-potential rule: >= 80 % of unshaded)"
+  },
+  "pysam_shading": {
+    "shading_en_azal": 1,
+    "shading_en_diff": 1,
+    "_note": "PySAM 7 ignores shading_azal / shading_diff unless these enable flags are set to 1 (verified: losses then match the inventory's own TMY estimate within 0.2 pp)."
+  },
+  "costs": {
+    "_status": "PLACEHOLDERS from Team4_SAM_Inputs 'Economics' (NREL Q1 2023 / LBNL 2025 benchmarks) - Felipe to replace",
+    "installed_usd_per_wdc": {
+      "roof": 1.9,
+      "carport": 2.8,
+      "ground_fixed": 1.45,
+      "ground_tracker": 1.6,
+      "roof_east_west": 1.9,
+      "garage_canopy": 2.8
+    },
+    "om_usd_per_kwdc_yr": {
+      "roof": 18,
+      "carport": 20,
+      "ground_fixed": 15,
+      "ground_tracker": 17,
+      "garage_canopy": 20,
+      "roof_east_west": 18
+    },
+    "cost_drivers_carried_per_site": [
+      "archetype / mount / structure",
+      "system_capacity_kw (economies of scale)",
+      "height_m (crane, access)",
+      "roof_age_yr (re-roof before PV?)",
+      "dist_substation_m (interconnection for ground / parking)",
+      "shade_loss_pct"
+    ],
+    "finance": {
+      "discount_rate": 0.06,
+      "years": 25,
+      "crf": 0.0782,
+      "levelized_energy_factor": 0.956,
+      "electricity_price_usd_per_kwh": {
+        "base_purchase_fy23": 0.056,
+        "ues_rate_fy27": 0.1
+      },
+      "itc_sensitivity": 0.3,
+      "_source": "Team4_SAM_Inputs 'Economics': LCOE = (capex x CRF + O&M) / (yield x 0.956); 6 %, 25 yr"
+    }
+  }
+}

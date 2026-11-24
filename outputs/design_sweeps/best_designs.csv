@@ -1,0 +1,13 @@
+case,metric,layout,tilt,azimuth,gcr,kwh_per_kwdc,kwdc_per_m2,kwh_per_m2,clipping_pct,mount,kwh_per_usd,dc_ac
+"roof, rows: max kWh per m2 of roof",kwh_per_m2,south rows,15.0,180.0,0.8,1455.941,0.158,229.456,0.016,,,
+"roof, east-west: max kWh per m2 of roof",kwh_per_m2,east-west dual tilt,5.0,90.0,0.95,1355.235,0.187,253.632,0.0,,,
+roof: max kWh per module (kWdc),kwh_per_kwdc,south rows,15.0,180.0,0.4,1492.961,0.079,117.645,0.016,,,
+carport: max kWh per kWdc,kwh_per_kwdc,,10.0,140.0,0.95,1460.405,0.187,273.315,0.008,,,
+ground fixed: max kWh per m2 of land,kwh_per_m2,,20.0,,0.7,1491.379,0.138,205.661,0.032,fixed,1.029,
+tracker: max kWh per m2 of land,kwh_per_m2,,0.0,,0.5,1712.689,0.098,168.7,0.005,tracker,1.07,
+ground: max kWh per $ (budget),kwh_per_usd,,0.0,,0.25,1826.198,0.049,89.94,0.008,tracker,1.141,
+ground: max kWh per kWdc,kwh_per_kwdc,,0.0,,0.25,1826.198,0.049,89.94,0.008,tracker,1.141,
+"fixed 25 deg: max MWh per MWac (grid limit, clipping <= 3 %)",mwh_per_mwac,,,,,1495.326,,,1.49,fixed 25 deg,,1.4
+"tracker: max MWh per MWac (grid limit, clipping <= 3 %)",mwh_per_mwac,,,,,1738.424,,,2.878,tracker,,1.5
+"roof 10 deg: max MWh per MWac (grid limit, clipping <= 3 %)",mwh_per_mwac,,,,,1410.779,,,1.541,roof 10 deg,,1.5
+"CURRENT roof archetype (10 deg, 140, GCR 0.76)",kwh_per_m2,edge-aligned 140,10.0,140.0,0.76,1429.626,0.15,214.044,0.006,,,

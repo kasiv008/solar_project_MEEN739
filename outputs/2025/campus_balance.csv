@@ -1,0 +1,25 @@
+campus_scenario,campus_gwh,load_shape,portfolio,pv_gwh,pv_peak_mwac,pv_pct_of_campus,used_on_campus_gwh,exported_gwh,grid_import_gwh,grid_cut_pct,daytime_load_met_pct,hours_no_import
+low,611.0,flat,roofs + garages,90.9,54.1,14.9,90.9,0.0,386.3,19.0,38.8,0
+low,611.0,flat,roofs + garages + parking,151.2,89.5,24.7,135.1,16.1,342.1,28.3,57.7,1240
+low,611.0,flat,+ all open land (fixed),273.6,158.7,44.8,166.7,106.9,310.5,34.9,71.3,2242
+low,611.0,flat,+ all open land (tracker),251.4,138.0,41.2,168.2,83.2,309.0,35.2,71.9,2226
+low,611.0,cooling,roofs + garages,90.9,54.1,14.9,90.8,0.0,386.4,19.0,37.3,12
+low,611.0,cooling,roofs + garages + parking,151.2,89.5,24.7,139.7,11.5,337.5,29.3,57.3,1023
+low,611.0,cooling,+ all open land (fixed),273.6,158.7,44.8,175.3,98.3,301.9,36.7,72.0,2201
+low,611.0,cooling,+ all open land (tracker),251.4,138.0,41.2,176.8,74.7,300.4,37.0,72.6,2158
+central,650.0,flat,roofs + garages,90.9,54.1,14.0,90.9,0.0,425.3,17.6,35.9,0
+central,650.0,flat,roofs + garages + parking,151.2,89.5,23.3,140.1,11.1,376.1,27.1,55.4,1026
+central,650.0,flat,+ all open land (fixed),273.6,158.7,42.1,176.5,97.1,339.7,34.2,69.8,2166
+central,650.0,flat,+ all open land (tracker),251.4,138.0,38.7,177.8,73.6,338.4,34.4,70.3,2099
+central,650.0,cooling,roofs + garages,90.9,54.1,14.0,90.9,0.0,425.3,17.6,34.5,2
+central,650.0,cooling,roofs + garages + parking,151.2,89.5,23.3,143.9,7.3,372.3,27.9,54.6,770
+central,650.0,cooling,+ all open land (fixed),273.6,158.7,42.1,185.4,88.1,330.8,35.9,70.4,2071
+central,650.0,cooling,+ all open land (tracker),251.4,138.0,38.7,186.8,64.7,329.4,36.2,70.9,2037
+high,686.0,flat,roofs + garages,90.9,54.1,13.2,90.9,0.0,461.3,16.5,33.6,0
+high,686.0,flat,roofs + garages + parking,151.2,89.5,22.0,143.9,7.3,408.3,26.1,53.1,835
+high,686.0,flat,+ all open land (fixed),273.6,158.7,39.9,185.2,88.4,367.0,33.5,68.4,2071
+high,686.0,flat,+ all open land (tracker),251.4,138.0,36.7,186.3,65.2,365.9,33.7,68.8,2004
+high,686.0,cooling,roofs + garages,90.9,54.1,13.2,90.9,0.0,461.3,16.5,32.2,0
+high,686.0,cooling,roofs + garages + parking,151.2,89.5,22.0,146.7,4.5,405.5,26.6,52.0,534
+high,686.0,cooling,+ all open land (fixed),273.6,158.7,39.9,194.2,79.4,358.0,35.2,68.9,1940
+high,686.0,cooling,+ all open land (tracker),251.4,138.0,36.7,195.5,56.0,356.7,35.4,69.3,1928

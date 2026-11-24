@@ -1,0 +1,28 @@
+# --- large input data: shipped separately as solar_data.zip (see README) ---
+/tamu_land_resources/
+/data/*
+!/data/raw/
+/data/raw/*
+# small inputs kept in git so the pipeline runs after unzipping the data
+!/data/raw/weather/
+!/data/raw/eia/
+/data/raw/eia/*
+!/data/raw/eia/tamu_cup_58151_annual.csv
+!/data/raw/tamu_fcor_status.csv
+
+*.zip
+*.laz
+*.las
+*.tif
+*.parquet
+
+# regenerable, large review packs (scripts/06_qa_imagery.py)
+/outputs/*/qa/roof_review_chips.pdf
+
+# python / editors
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store

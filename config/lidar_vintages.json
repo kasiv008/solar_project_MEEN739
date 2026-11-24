@@ -1,0 +1,19 @@
+{
+  "2017": {
+    "source": "USGS 3DEP (merged tile shipped in tamu_land_resources.zip)",
+    "laz": ["tamu_land_resources/laz/merged_tamu.laz"],
+    "flight_date": "2017-01-08",
+    "year": 2017,
+    "vertical_datum": "NAVD88 (GEOID12B)",
+    "classes": "1 unclassified, 2 ground (no building class)"
+  },
+  "2025": {
+    "source": "TNRIS StratMap 2025 50 cm, Little/Middle/Lower Brazos basins (projects 3096223, 3096301); 9 of 32 tiles intersect the campus tile",
+    "laz": ["tamu_land_resources/laz/merged_tamu_2025.laz"],
+    "tiles": "data/raw/lidar_2025/tiles/*.laz (9 StratMap tiles, merged + cropped by scripts/merge_lidar_2025.py)",
+    "flight_date": "2025-01-13",
+    "year": 2025,
+    "vertical_datum": "NAVD88 (GEOID18)",
+    "classes": "2 ground, 3-5 vegetation, 6 building, 7/18 noise, 14 wire, 17 bridge"
+  }
+}
